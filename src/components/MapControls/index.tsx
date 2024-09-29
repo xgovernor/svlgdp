@@ -40,7 +40,7 @@ const MapControls = () => {
                 { title: 'Current Location', icon: Send, onClick: handleCurrentLocation },
             ]} />
 
-            <Button variant="secondary" size="icon" onClick={handleHome}>
+            <Button className="text-[#CBD0D0] bg-[#1B1B1F] hover:bg-[#24282A] border border-black" variant="secondary" size="icon" onClick={handleHome}>
                 <Home className="h-4 w-4" />
             </Button>
 
@@ -60,9 +60,9 @@ const MapControls = () => {
  */
 const ToolBox = ({ actions }: { actions: { title: string, icon?: React.ElementType, onClick?: () => void }[] }): JSX.Element => {
     return (
-        <div className="flex flex-col rounded-md overflow-hidden">
+        <div className="flex flex-col rounded-md overflow-hidden bg-[#1B1B1F] text-[#CBD0D0] border border-black">
             {actions.map((action, i) => (
-                <Button key={i} className="border-b border-b-[#] rounded-none" variant="secondary" size="icon" onClick={action.onClick}>
+                <Button key={i} className="text-[#CBD0D0] bg-[#1B1B1F] hover:bg-[#24282A] [&:not(:last-of-type)]:border-b border-b-black rounded-none" variant="secondary" size="icon" onClick={action.onClick}>
                     {action.icon && <action.icon className="h-4 w-4" />}
                 </Button>
             ))}

@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { Layers, Home, HelpCircle, ChevronRight, X } from "lucide-react"
+import { Layers, Home, HelpCircle, X } from "lucide-react"
 import { cn } from "@/lib/utils"
+import HeatmapCard from "../HeatmapCard/page"
 
 export default function Sidebar(): JSX.Element {
     const [activeMenu, setActiveMenu] = useState<string | null>(null)
@@ -48,13 +49,13 @@ function IconMenu(props: {
     ] as const;
 
     return (
-        <div className="w-14 h-screen py-4 px-2 flex flex-col items-center bg-[#1B1B1F] text-white border-e border-e-[#343434]">
+        <div className="w-14 h-screen p-2 flex flex-col items-center bg-[#1B1B1F] text-white border-e border-e-black">
             <nav className="space-y-2 flex-grow">
                 {icons.map((item) => (
                     <button
                         key={item.name}
                         onClick={() => props.onIconClick(item.name)}
-                        className={cn("p-3 text-gray-400 rounded-md", props.activeMenu === item.name && "text-white bg-black")}
+                        className={cn("p-3 text-gray-400 rounded-md hover:bg-[#24282A]", props.activeMenu === item.name && "text-white bg-black")}
                     >
                         <item.icon size={18} />
                     </button>
@@ -75,39 +76,31 @@ function SecondMenu(props: {
     onClose: () => void;
 }): JSX.Element {
     return (
-        <div className={cn("w-[350px] h-screen text-gray-300 p-4 flex flex-col bg-[#1B1B1F] border-e border-e-[#343434]")}>
-            <div className="flex justify-between items-center mb-8">
+        <div className={cn("w-[350px] h-screen text-gray-300 p-4 flex flex-col bg-[#1B1B1F] border-e border-e-black")}>
+            <div className="flex justify-between items-center mb-5">
                 <h2 className="text-xl font-semibold">{props.activeMenu}</h2>
                 <button onClick={props.onClose} className="text-gray-400 hover:text-gray-200">
                     <X size={18} />
                 </button>
             </div>
-            <nav className="space-y-1 flex-grow">
-                <NavItem label="Item 1" />
-                <NavItem label="Item 2" hasDropdown />
-                <NavItem label="Item 3" hasDropdown />
-                <NavItem label="Item 4" />
-                <NavItem label="Item 5" />
-            </nav>
+
+            <div className="flex flex-wrap gap-4">
+                <HeatmapCard
+                    title="Temperature Heatmap"
+                    info="Shows temperature distribution across the region"
+                    dataType="Temperature Data"
+                />
+                <HeatmapCard
+                    title="Population Density"
+                    info="Displays population density in urban areas"
+                    dataType="Demographic Data"
+                />
+                <HeatmapCard
+                    title="Traffic Congestion"
+                    info="Illustrates traffic congestion levels in the city"
+                    dataType="Traffic Data"
+                />
+            </div>
         </div>
     )
-}
-
-function NavItem({
-    label,
-    hasDropdown = false,
-}: {
-    label: string;
-    hasDropdown?: boolean;
-}): JSX.Element {
-    return (
-        <div className="flex items-center py-2 px-3 rounded hover:bg-gray-700">
-            <span className="flex-grow">{label}</span>
-            {hasDropdown && (
-                <span className="ml-auto">
-                    <ChevronRight size={18} />
-                </span>
-            )}
-        </div>
-    );
 }

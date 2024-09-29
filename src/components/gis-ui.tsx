@@ -1,7 +1,9 @@
 "use client"
 import Header from './Header'
 import Sidebar from './Sidebar'
-import GisMap from './GisMap'
+import dynamic from 'next/dynamic';
+// const NasaHeatmap = dynamic(() => import('./test/NasaHeatmap'), { ssr: false })
+const GisMap = dynamic(() => import('./GisMap'), { ssr: false });
 
 
 export default function GisUI() {
@@ -14,6 +16,7 @@ export default function GisUI() {
 
         <main className="flex-1 relative">
           <GisMap />
+          {/* <NasaHeatmap /> */}
         </main>
       </div>
     </div>
