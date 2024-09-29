@@ -1,12 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Info, Layers, Menu, Search, SunIcon } from "lucide-react";
+import { Info, MenuIcon, Search, SunIcon } from "lucide-react";
 import Link from 'next/link';
 import { Input } from "./ui/input";
 import { memo } from "react";
 import ProfileMenu from "./ProfileMenu";
+import Image from "next/image";
+import LOGO from './../../public/icons/48.png';
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const links = [
     { name: "Home", href: "/" },
@@ -19,34 +21,38 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="flex items-center justify-between lg:grid lg:grid-cols-12 py-1 px-4 bg-[#1C1C1C]  border-b border-b-black">
-                <div className="flex items-center gap-4 lg:col-start-1 lg:col-end-2">
-                    <Sheet>
-                        <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className="lg:hidden">
-                                <Menu className="h-6 w-6" />
-                            </Button>
-                        </SheetTrigger>
-                        <SheetContent side="left">
-                            <div className="grid gap-4 py-4">
-                                <Button variant="ghost" className="justify-start">
-                                    <Layers className="mr-2 h-4 w-4" /> Layer 1
+            <nav className="max-md:ps-2 flex items-center justify-between lg:grid lg:grid-cols-5 py-1 px-4 bg-[#1C1C1C]  border-b border-b-black">
+                <div className="col-span-2 flex gap-4">
+                    <div className="flex items-center gap-4">
+                        {/* Mobile Menu */}
+                        <Sheet>
+                            <SheetTrigger asChild>
+                                <Button variant="ghost" size="icon" className="lg:hidden">
+                                    <MenuIcon className="h-6 w-6" />
                                 </Button>
-                                <Button variant="ghost" className="justify-start">
-                                    <Layers className="mr-2 h-4 w-4" /> Layer 2
-                                </Button>
-                                <Button variant="ghost" className="justify-start">
-                                    <Layers className="mr-2 h-4 w-4" /> Layer 3
-                                </Button>
-                            </div>
-                        </SheetContent>
-                    </Sheet>
-                    <Link href="/" className="text-xl font-bold">
-                        SVLGDP
-                    </Link>
-                </div>
+                            </SheetTrigger>
+                            <SheetContent side="left" className="bg-[#1C1C1C] border-r border-r-black">
+                                <div className="flex flex-col gap-4 p-4">
+                                    {links.map((link) => (
+                                        <Link
+                                            key={link.name}
+                                            href={link.href}
+                                            className="text-[13px] font-medium hover:underline"
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    ))}
+                                </div>
+                            </SheetContent>
+                        </Sheet>
 
-                <div className="hidden md:flex items-center gap-4 lg:col-start-2 lg:col-end-5">
+                        <Link href="/" className="text-lg font-extrabold italic flex items-center gap-2">
+                            <Image className="w-7 h-7" {...LOGO} alt="SVLGDP" />
+                            SVLGDP
+                        </Link>
+                    </div>
+
+                    <div className="hidden md:flex items-center gap-4">
                     {links.map((link) => (
                         <Link
                             key={link.name}
@@ -56,10 +62,11 @@ const Header = () => {
                             {link.name}
                         </Link>
                     ))}
+                    </div>
                 </div>
 
                 {/* Search Box */}
-                <div className="hidden lg:flex justify-center items-center gap-4 lg:col-start-5 lg:col-end-9">
+                <div className="hidden lg:flex justify-center items-center gap-4 col-span-1">
                     <div className="w-full flex items-center bg-[#24282A] border border-black rounded-sm ring-0 outline-none shadow-none overflow-hidden">
                         <Input className="h-8 rounded-none border-none" type="search" placeholder="Search" />
                         <Button className="me-0.5 w-8 h-8 text-gray-300 hover:text-[#fffff5db] hover:bg-[#161618]" variant="ghost" size="icon">
@@ -68,7 +75,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-end items-center lg:col-start-9 lg:col-end-13">
+                <div className="flex justify-end items-center col-span-2">
                     <Button className="hover:text-[#fffff5db] hover:bg-[#161618]" variant="ghost" size="icon">
                         <SunIcon className="h-4 w-4" />
                     </Button>
