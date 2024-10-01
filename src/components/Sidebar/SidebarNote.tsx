@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useCallback, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import AppSidebar from "./AppSidebar";
 import React from "react";
 import { Calendar, EditIcon, MapIcon, MapPinIcon, SendIcon, Trash2Icon } from "lucide-react";
@@ -15,7 +15,7 @@ export interface ISidebarNote {
 }
 
 const SidebarNote = ({ open = true, toggleDrawer }: ISidebarNote) => {
-    const { notes, deleteNote } = useNoteStore();
+    const { notes, fetchNotes, removeNote } = useNoteStore();
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [searchTerm, setSearchTerm] = useState('')
 
@@ -25,6 +25,10 @@ const SidebarNote = ({ open = true, toggleDrawer }: ISidebarNote) => {
         note.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
     )
 
+    useEffect(() => {
+        fetchNotes();
+    }, [fetchNotes]);
+
     return (
         <AppSidebar
             title="Note"
@@ -33,7 +37,7 @@ const SidebarNote = ({ open = true, toggleDrawer }: ISidebarNote) => {
         >
             <div className="grid grid-cols-1">
                 {filteredNotes.map((note, i) => (
-                    <NoteCard key={i} {...note} onDelete={deleteNote} />
+                    <NoteCard key={i} {...note} onDelete={removeNote} />
                 ))}
             </div>
         </AppSidebar>

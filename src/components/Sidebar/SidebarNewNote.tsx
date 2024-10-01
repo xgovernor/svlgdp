@@ -17,30 +17,40 @@ export interface ISidebarNewNote {
 }
 
 const SidebarNewNote = ({ open = true, toggleDrawer }: ISidebarNewNote) => {
-    const { setNote } = useNoteStore();
+    const { addNewNote } = useNoteStore();
     const { toggleSidebar } = useLayout();
 
-    const addNote = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
-        const form = event.currentTarget
-        const formData = new FormData(form)
-        const newNote: INote = {
-            id: Date.now().toString(),
-            title: formData.get('title') as string,
-            coordinates: {
-                lat: parseFloat(formData.get('lat') as string),
-                lng: parseFloat(formData.get('lng') as string)
-            },
-            content: formData.get('content') as string,
-            date: new Date().toISOString(),
-            layer: formData.get('mapType') as string,
-            tags: (formData.get('tags') as string).split(',').map(tag => tag.trim())
-        }
+    const addNote = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
 
-        setNote(newNote)
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+
+    // Parse and create the new note object
+        const newNote: INote = {
+            id: Date.now().toString(), // Can be replaced with a UUID for more uniqueness
+            title: formData.get("title") as string,
+            coordinates: {
+                lat: parseFloat(formData.get("lat") as string) || 0, // Fallback to 0 if invalid or empty
+                lng: parseFloat(formData.get("lng") as string) || 0, // Fallback to 0 if invalid or empty
+            },
+            content: formData.get("content") as string,
+            date: new Date().toISOString(), // Use ISO string for the current date
+            layer: formData.get("mapType") as string,
+            tags: (formData.get("tags") as string)
+                .split(",")
+                .map((tag) => tag.trim()) // Split and trim tags by commas
+                .filter((tag) => tag !== ""), // Ensure no empty tags
+        };
+
+        // Add the note to the store
+        await addNewNote(newNote);
         toggleSidebar();
-        form.reset()
-    }
+
+        // Reset the form fields after submission
+        form.reset();
+    };
+
 
     return (
         <AppSidebar

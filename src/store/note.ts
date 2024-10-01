@@ -1,5 +1,7 @@
+import { addNote, deleteNote, getNotes } from "@/actions/note";
 import { create } from "zustand";
 
+// Interfaces for Note, Initial State, and Store Actions
 export interface INote {
   id: string;
   title: string;
@@ -15,41 +17,21 @@ export interface INote {
 export interface IInitialState {
   notes: INote[];
   form: Partial<INote>;
+  loading: boolean;
+  error: string | null;
 }
 
 export interface IStateActions {
-  setNote: (note: INote) => void;
-  deleteNote: (id: string) => void;
+  fetchNotes: () => Promise<void>;
+  addNewNote: (note: INote) => Promise<void>;
+  removeNote: (id: string) => Promise<void>;
   updateForm: (note: Partial<INote>) => void;
 }
 
 export interface INoteStore extends IInitialState, IStateActions {}
 
-const notes: INote[] = [
-  {
-    id: "1",
-    title: "Urban Development Site",
-    coordinates: { lat: 40.7128, lng: -74.006 },
-    content:
-      "Potential area for new urban development project. Need to analyze surrounding infrastructure.",
-    date: "2023-09-15",
-    layer: "Satellite",
-    tags: ["Urban", "Development", "Infrastructure"],
-  },
-  {
-    id: "2",
-    title: "Forest Conservation Area",
-    coordinates: { lat: 37.7749, lng: -122.4194 },
-    content:
-      "Protected forest area with diverse ecosystem. Important for biodiversity studies.",
-    date: "2023-09-10",
-    layer: "Terrain",
-    tags: ["Conservation", "Biodiversity", "Forest"],
-  },
-];
-
 export const useNoteStore = create<INoteStore>((set) => ({
-  notes,
+  notes: [],
   form: {
     title: "",
     coordinates: { lat: 0, lng: 0 },
@@ -58,15 +40,55 @@ export const useNoteStore = create<INoteStore>((set) => ({
     layer: "",
     tags: [],
   },
-  setNote: (note) => {
-    set({ notes: [...notes, note] });
+  loading: false,
+  error: null,
+
+  // Fetch all notes from MongoDB
+  fetchNotes: async () => {
+    set({ loading: true, error: null });
+    try {
+      const notes = await getNotes(); // Fetch notes from MongoDB
+      set({ notes, loading: false });
+    } catch (error) {
+      console.error("Error fetching notes:", error);
+      set({ loading: false, error: "Failed to load notes" });
+    }
   },
-  deleteNote: (id) => {
+
+  // Add a new note both in MongoDB and in the state
+  addNewNote: async (note: INote) => {
+    set({ loading: true, error: null });
+    try {
+      await addNote(note); // Add note to MongoDB
+      set((state) => ({
+        notes: [...state.notes, note],
+        loading: false,
+      }));
+    } catch (error) {
+      console.error("Error adding note:", error);
+      set({ loading: false, error: "Failed to add note" });
+    }
+  },
+
+  // Remove a note both from MongoDB and from the state
+  removeNote: async (id: string) => {
+    set({ loading: true, error: null });
+    try {
+      await deleteNote(id); // Delete note from MongoDB
+      set((state) => ({
+        notes: state.notes.filter((note) => note.id !== id),
+        loading: false,
+      }));
+    } catch (error) {
+      console.error("Error deleting note:", error);
+      set({ loading: false, error: "Failed to delete note" });
+    }
+  },
+
+  // Update the form state
+  updateForm: (formData: Partial<INote>) => {
     set((state) => ({
-      notes: state.notes.filter((item) => item.id !== id),
+      form: { ...state.form, ...formData },
     }));
-  },
-  updateForm: (formData) => {
-    set((state) => ({ form: { ...state.form, ...formData } }));
   },
 }));

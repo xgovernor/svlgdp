@@ -7,6 +7,8 @@ import { SessionProvider } from "next-auth/react";
 import Header from "@/components/Header";
 import { useLayout } from "@/store/layout";
 
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
@@ -52,6 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const { theme } = useLayout();
+
 
   return (
     <html lang="en" className={theme}>
