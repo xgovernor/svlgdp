@@ -56,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={theme}>
       <body
-        className={`${inter.className} antialiased`}
+        className={`${inter.className} antialiased  bg-[#1B1B1F]`}
       >
         <SessionProvider>
           <Header />

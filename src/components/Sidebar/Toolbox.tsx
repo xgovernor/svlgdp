@@ -36,7 +36,7 @@ function ToolBox(props: {
 
 
     return (
-        <div className="w-14 p-2 flex flex-col items-center bg-[#1B1B1F] text-white border-e border-e-black">
+        <div className="w-14 p-2 flex flex-col items-center bg-[#1C1C1C] text-white border-e border-e-black">
             <nav className="space-y-2 flex-grow">
                 {icons.map((item) => (
                     <button

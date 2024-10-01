@@ -23,7 +23,7 @@ const Header = () => {
 
 
     return (
-        <header>
+        <header className="sticky top-0 z-50">
             <nav className="max-md:ps-2 flex items-center justify-between lg:grid lg:grid-cols-5 py-1 px-4 bg-[#1C1C1C]  border-b border-b-black">
                 <div className="col-span-2 flex gap-4">
                     <div className="flex items-center gap-4">
