@@ -13,11 +13,13 @@ import CoordinatesDisplay from '../CoordinatesDisplay';
 import 'leaflet/dist/leaflet.css';
 import GeoJsonLayer from './GeoJsonLayer';
 import ErrorBoundary from '../ErrorBoundary';
+import { IOverlay, useMap } from '@/store/map';
 
 // Error handling boundary
 
 // Center of the Mangrove Forest for GIS
 const MAP_CENTER = { lat: 22.0716, lng: 89.4672 };
+
 
 // Helper to get today's date in NASA FIRMS format (yyyy-mm-dd)
 const getTodayDate = () => {
@@ -28,51 +30,24 @@ const getTodayDate = () => {
     return `${yyyy}-${mm}-${dd}`;
 };
 
-// Define base layers and overlays
-const BaseLayer = ({
-    name,
-    url,
-    maxZoom,
-    attribution,
-    checked = false,
-    crs = 'EPSG3857', // Default CRS
-}: {
-    name: string;
-    url: string;
-    maxZoom: number;
-    attribution: string;
-    checked?: boolean;
-    crs?: string;
-}) => {
-    return (
-        <LayersControl.BaseLayer name={name} checked={checked}>
-            <TileLayer
-                url={url}
-                maxZoom={maxZoom}
-                attribution={attribution}
-                errorTileUrl="/path/to/error-tile.png" // Optional for fallback
-            />
-        </LayersControl.BaseLayer>
-    );
-};
-
 const GisUI = () => {
     const [map, setMap] = useState<Leaflet.Map | null>(null);
+    const { layers, layer, overlays, overlay } = useMap();
 
-    useEffect(() => {
-        if (!map) return;
+    // useEffect(() => {
+    //     if (!map) return;
 
-        map.on('click', (e) => {
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const { lat, lng } = e.latlng;
-            console.log(lat, lng);
-        });
-    }, [map]);
+    //     map.on('click', (e) => {
+    //         // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    //         const { lat, lng } = e.latlng;
+    //         console.log(lat, lng);
+    //     });
+    // }, [map]);
 
     return (
         <ErrorBoundary>
             <MapContainer
-                className="h-full w-full z-0"
+                className="w-full z-0"
                 center={MAP_CENTER}
                 zoom={9}
                 style={{ height: '100%', width: '100%' }}
@@ -81,22 +56,14 @@ const GisUI = () => {
                 ref={setMap}
             >
                 <LayersControl position="topleft">
-                    {/* Base Layer: OpenStreetMap */}
-                    <BaseLayer
-                        name="OpenStreetMap"
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        maxZoom={18}
-                        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    />
-
-                    {/* ArcGIS World Imagery */}
-                    <BaseLayer
-                        name="ArcGIS World Imagery"
-                        url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-                        maxZoom={18}
-                        attribution='Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, GeoEye, Getmapping, Aerogrid, IGN, IGP, Polygonizer,UIApplicationDelegate, Public domain'
-                        checked={true}
-                    />
+                    {layers.map(({ name, ...rest }, index) => (
+                        <LayersControl.BaseLayer key={index} name={name} checked={rest.url === layer.url}>
+                            <TileLayer
+                                {...rest}
+                                errorTileUrl="/path/to/error-tile.png" // Optional for fallback
+                            />
+                        </LayersControl.BaseLayer>
+                    ))}
                 </LayersControl>
 
                 <LayersControl position="topleft">
@@ -107,24 +74,14 @@ const GisUI = () => {
                     // "NDFI": NDFI,
                     */}
 
-                    {/* Overlay: Rainfall */}
-                    <LayersControl.Overlay name="Rainfall">
-                        <GeoJsonLayer url="https://sustainable-caucasus.unepgrid.ch/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Amax_precipitation&outputFormat=json&srs=EPSG%3A28408&srsName=EPSG%3A28408" name="Rainfall" />
-                    </LayersControl.Overlay>
-
-                    {/* Overlay: CH4 Metadata */}
-                    <LayersControl.Overlay name="Methane Metadata">
-                        <GeoJsonLayer url="/data/methane-metadata.geojson" name="CH4" />
-                    </LayersControl.Overlay>
-
-                    {/* Overlay: CO2 Metadata */}
-                    <LayersControl.Overlay name="Carbon Metadata">
-                        <GeoJsonLayer url="/data/co2-metadata.geojson" name="CO2" />
-                    </LayersControl.Overlay>
-
-                    <LayersControl.Overlay name="Study Area" checked={true}>
-                        <GeoJsonLayer url="/data/study-area.geojson" name="Study Area" />
-                    </LayersControl.Overlay>
+                    {overlays.map(({ name, ...rest }, index) => {
+                        const checked = overlay.filter((item) => item.url === rest.url)[0] ? true : false;
+                        return (
+                            <LayersControl.Overlay key={index} name={name} checked={checked}>
+                                <GeoJsonLayer name={name} {...rest} />
+                            </LayersControl.Overlay>
+                        )
+                    })}
                 </LayersControl>
 
                 <MapControls />

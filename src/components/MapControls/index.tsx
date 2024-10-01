@@ -1,17 +1,39 @@
 "use client";
 import { useMap } from "react-leaflet"
 import { Button } from "../ui/button"
-import { Home, MessageSquarePlus, Send, Share2, ZoomIn, ZoomOut } from "lucide-react"
+import { Home, NotebookPenIcon, Send, Share2, ZoomIn, ZoomOut } from "lucide-react"
 import { memo } from "react"
+import { useLayout } from "@/store/layout";
+import { Marker } from "leaflet";
+import { useMap as useMapStore } from "@/store/map"
+import { useNoteStore } from "@/store/note";
 
 
 const MapControls = () => {
     const map = useMap()
+    const { toggleSidebar } = useLayout()
+    const { layer, overlay } = useMapStore()
+    const { form, updateForm } = useNoteStore();
 
     const handleZoomIn = () => map.zoomIn();
     const handleZoomOut = () => map.zoomOut();
     const handleHome = () => map.flyTo([22.0716, 89.4672], 9.5);
-    const handleMessage = () => console.log('https://svlgdp.com', '_blank');
+    const handleNewNote = () => {
+        const { lat, lng } = map.getCenter();
+        const zoom = map.getZoom();
+        const activeOverlays = overlay.map(i => i.name);
+        console.log({ lat, lng, zoom, activeOverlays });
+
+        updateForm({ ...form, coordinates: { lat, lng }, layer: layer.name, overlay: activeOverlays, zoom })
+        toggleSidebar("drawerNewNote");
+
+        const marker: Marker = new Marker([lat, lng], { draggable: true, title: `Mark-1`, riseOnHover: true });
+
+        marker.on("click", () => {
+            marker.remove();
+        });
+        map.addLayer(marker);
+    };
     const handleShare = () => {
         if (navigator.share) {
             navigator.share({
@@ -45,7 +67,7 @@ const MapControls = () => {
             </Button>
 
             <ToolBox actions={[
-                { title: 'Message', icon: MessageSquarePlus, onClick: handleMessage },
+                { title: 'Message', icon: NotebookPenIcon, onClick: handleNewNote },
                 { title: 'Share', icon: Share2, onClick: handleShare },
             ]} />
         </div>

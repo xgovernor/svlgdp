@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Info, MenuIcon, Search, SunIcon } from "lucide-react";
+import { Info, MenuIcon, MoonIcon, Search, SunIcon } from "lucide-react";
 import Link from 'next/link';
 import { Input } from "./ui/input";
 import { memo } from "react";
@@ -9,6 +9,7 @@ import ProfileMenu from "./ProfileMenu";
 import Image from "next/image";
 import LOGO from './../../public/icons/48.png';
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { useLayout } from "@/store/layout";
 
 const links = [
     { name: "Home", href: "/" },
@@ -18,6 +19,8 @@ const links = [
 ];
 
 const Header = () => {
+    const { theme, setTheme } = useLayout();
+
 
     return (
         <header>
@@ -76,8 +79,8 @@ const Header = () => {
                 </div>
 
                 <div className="flex justify-end items-center col-span-2">
-                    <Button className="hover:text-[#fffff5db] hover:bg-[#161618]" variant="ghost" size="icon">
-                        <SunIcon className="h-4 w-4" />
+                    <Button onClick={setTheme} className="hover:text-[#fffff5db] hover:bg-[#161618]" variant="ghost" size="icon">
+                        {theme === 'dark' ? <SunIcon className="h-4 w-4" /> : <MoonIcon className="h-4 w-4" />}
                     </Button>
                     <Button className="hover:text-[#fffff5db] hover:bg-[#161618]" variant="ghost" size="icon">
                         <Info className="h-4 w-4" />
