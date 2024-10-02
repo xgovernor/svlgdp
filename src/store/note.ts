@@ -72,6 +72,7 @@ export const useNoteStore = create<INoteStore>((set) => ({
 
   // Remove a note both from MongoDB and from the state
   removeNote: async (id: string) => {
+    console.log(id);
     set({ loading: true, error: null });
     try {
       await deleteNote(id); // Delete note from MongoDB

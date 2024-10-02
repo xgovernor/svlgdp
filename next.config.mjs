@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["net"],
+    // transpilePackages: ["crypto"],
+    // serverExternalPackages: ['crypto'],
     images: {
         remotePatterns: [
             {

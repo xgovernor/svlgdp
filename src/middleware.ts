@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { auth } from "@/lib/auth"; // Assuming auth middleware populates req.auth
 
+export const runtime = "experimental-edge"; // optional
+
 export default auth((req) => {
   const { pathname, origin } = req.nextUrl;
   const authRoutes = ["/auth/signin", "/api/auth/error", "/auth/error"];
