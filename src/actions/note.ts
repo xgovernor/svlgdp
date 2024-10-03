@@ -37,8 +37,8 @@ export async function getNotes(): Promise<INote[]> {
       .toArray();
 
     // Transform the MongoDB documents to match the INote structure
-    return notes.map((note) => ({
-      id: note._id.toString(), // Convert ObjectId to string
+    return notes.map(({ _id, ...note }) => ({
+      id: _id.toString(), // Convert ObjectId to string
       title: note.title,
       coordinates: note.coordinates,
       content: note.content,
