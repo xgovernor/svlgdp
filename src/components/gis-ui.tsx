@@ -1,4 +1,4 @@
-// import Header from './Header'
+
 import Sidebar from './Sidebar'
 import dynamic from 'next/dynamic';
 // const NasaHeatmap = dynamic(() => import('./test/NasaHeatmap'), { ssr: false })

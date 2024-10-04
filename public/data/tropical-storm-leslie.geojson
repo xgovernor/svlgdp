@@ -1,0 +1,615 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EONET_11475",
+        "title": "Tropical Storm Leslie",
+        "description": "",
+        "link": "https://eonet.gsfc.nasa.gov/api/v2.1/events/EONET_11475",
+        "categories": [
+          {
+            "id": 10,
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JTWC",
+            "url": "https://www.nhc.noaa.gov/archive/2024/LESLIE.shtml"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -30.1,
+            10.4
+          ],
+          [
+            -30.5,
+            10.3
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EONET_11448",
+        "title": "Tropical Cyclone Ancha",
+        "description": "",
+        "link": "https://eonet.gsfc.nasa.gov/api/v2.1/events/EONET_11448",
+        "categories": [
+          {
+            "id": 10,
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JTWC",
+            "url": "https://www.metoc.navy.mil/jtwc/products/sh0125.tcw"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            76.9,
+            9.6
+          ],
+          [
+            76.5,
+            -9.8
+          ],
+          [
+            76.1,
+            -9.9
+          ],
+          [
+            75.7,
+            -10
+          ],
+          [
+            75.2,
+            -10.4
+          ],
+          [
+            74.6,
+            -11.5
+          ],
+          [
+            73.8,
+            -12
+          ],
+          [
+            73,
+            -12.4
+          ],
+          [
+            72.4,
+            -12.7
+          ],
+          [
+            71.1,
+            -12.8
+          ],
+          [
+            70,
+            -13.2
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EONET_11409",
+        "title": "Hurricane Kirk",
+        "description": "",
+        "link": "https://eonet.gsfc.nasa.gov/api/v2.1/events/EONET_11409",
+        "categories": [
+          {
+            "id": 10,
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "NOAA_NHC",
+            "url": "https://www.nhc.noaa.gov/archive/2024/KIRK.shtml"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -34.8,
+            13.5
+          ],
+          [
+            -35.7,
+            13.6
+          ],
+          [
+            -36.8,
+            14.4
+          ],
+          [
+            -38,
+            14.9
+          ],
+          [
+            -39.2,
+            15.3
+          ],
+          [
+            -40.1,
+            16.2
+          ],
+          [
+            -40.8,
+            16.7
+          ],
+          [
+            -42.1,
+            17.5
+          ],
+          [
+            -43,
+            18
+          ],
+          [
+            -44,
+            18.9
+          ],
+          [
+            -44.3,
+            19.3
+          ],
+          [
+            -44.5,
+            19.5
+          ],
+          [
+            -45,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EONET_11380",
+        "title": "Super Typhoon Krathon",
+        "description": "",
+        "link": "https://eonet.gsfc.nasa.gov/api/v2.1/events/EONET_11380",
+        "categories": [
+          {
+            "id": 10,
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JTWC",
+            "url": "https://www.metoc.navy.mil/jtwc/products/wp2024.tcw"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            126.1,
+            19.5
+          ],
+          [
+            125.9,
+            18.9
+          ],
+          [
+            125.6,
+            18.6
+          ],
+          [
+            125.2,
+            18.6
+          ],
+          [
+            124.7,
+            18.6
+          ],
+          [
+            124.3,
+            18.7
+          ],
+          [
+            123.9,
+            19.2
+          ],
+          [
+            123.2,
+            19.7
+          ],
+          [
+            122.3,
+            20
+          ],
+          [
+            122,
+            20.1
+          ],
+          [
+            121.2,
+            20.5
+          ],
+          [
+            120.5,
+            20.5
+          ],
+          [
+            120,
+            20.6
+          ],
+          [
+            119.6,
+            20.6
+          ],
+          [
+            119.4,
+            20.9
+          ],
+          [
+            119.3,
+            21.3
+          ],
+          [
+            119.2,
+            21.5
+          ],
+          [
+            119.3,
+            21.5
+          ],
+          [
+            119.4,
+            21.9
+          ],
+          [
+            119.5,
+            22
+          ],
+          [
+            119.7,
+            22.2
+          ],
+          [
+            120,
+            22.4
+          ],
+          [
+            120.4,
+            22.6
+          ],
+          [
+            120.7,
+            22.7
+          ],
+          [
+            120.9,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EONET_11351",
+        "title": "Tropical Storm Joyce",
+        "description": "",
+        "link": "https://eonet.gsfc.nasa.gov/api/v2.1/events/EONET_11351",
+        "categories": [
+          {
+            "id": 10,
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "NOAA_NHC",
+            "url": "https://www.nhc.noaa.gov/archive/2024/JOYCE.shtml"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -42.9,
+            18.1
+          ],
+          [
+            -44,
+            18.6
+          ],
+          [
+            -44.7,
+            18.9
+          ],
+          [
+            -45.3,
+            19.5
+          ],
+          [
+            -46,
+            20
+          ],
+          [
+            -46.7,
+            20.3
+          ],
+          [
+            -47.5,
+            20.9
+          ],
+          [
+            -48.1,
+            21.3
+          ],
+          [
+            -48.5,
+            21.6
+          ],
+          [
+            -49.2,
+            22.2
+          ],
+          [
+            -49.6,
+            22.3
+          ],
+          [
+            -49.7,
+            22.1
+          ],
+          [
+            -49.3,
+            22.4
+          ],
+          [
+            -48.9,
+            22.7
+          ],
+          [
+            -49,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EONET_11350",
+        "title": "Typhoon Jebi",
+        "description": "",
+        "link": "https://eonet.gsfc.nasa.gov/api/v2.1/events/EONET_11350",
+        "categories": [
+          {
+            "id": 10,
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JTWC",
+            "url": "https://www.metoc.navy.mil/jtwc/products/wp1924.tcw"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            145.3,
+            17.8
+          ],
+          [
+            144.8,
+            18.3
+          ],
+          [
+            144.9,
+            18.4
+          ],
+          [
+            144.5,
+            19.4
+          ],
+          [
+            143.3,
+            20
+          ],
+          [
+            142.9,
+            20.7
+          ],
+          [
+            142.7,
+            21.4
+          ],
+          [
+            141.9,
+            22.1
+          ],
+          [
+            141.6,
+            22.5
+          ],
+          [
+            141.1,
+            23.9
+          ],
+          [
+            140.8,
+            24.7
+          ],
+          [
+            140.7,
+            25.2
+          ],
+          [
+            140.2,
+            25.8
+          ],
+          [
+            140.6,
+            27.9
+          ],
+          [
+            140.9,
+            29.2
+          ],
+          [
+            141.2,
+            30.8
+          ],
+          [
+            141.7,
+            32.7
+          ],
+          [
+            142.3,
+            34.8
+          ],
+          [
+            143.6,
+            37.2
+          ],
+          [
+            145.3,
+            39.1
+          ],
+          [
+            148.5,
+            41.7
+          ],
+          [
+            152.5,
+            44.9
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EONET_11324",
+        "title": "Hurricane Isaac",
+        "description": "",
+        "link": "https://eonet.gsfc.nasa.gov/api/v2.1/events/EONET_11324",
+        "categories": [
+          {
+            "id": 10,
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "NOAA_NHC",
+            "url": "https://www.nhc.noaa.gov/archive/2024/ISAAC.shtml"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -54.1,
+            37.1
+          ],
+          [
+            -52.8,
+            37.1
+          ],
+          [
+            -51.7,
+            37.3
+          ],
+          [
+            -50.6,
+            37.5
+          ],
+          [
+            -49.8,
+            37.1
+          ],
+          [
+            -48.5,
+            37
+          ],
+          [
+            -46.8,
+            37.4
+          ],
+          [
+            -45.3,
+            37.8
+          ],
+          [
+            -43.4,
+            38.2
+          ],
+          [
+            -41.3,
+            39.3
+          ],
+          [
+            -39.7,
+            40.2
+          ],
+          [
+            -38.4,
+            41.3
+          ],
+          [
+            -37.6,
+            42.1
+          ],
+          [
+            -36.5,
+            42.6
+          ],
+          [
+            -35.6,
+            43.2
+          ],
+          [
+            -34.7,
+            43.8
+          ],
+          [
+            -32.8,
+            44.4
+          ],
+          [
+            -31.3,
+            44.7
+          ],
+          [
+            -29.1,
+            44.8
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -12,7 +12,7 @@ export interface ILayer {
   name: string;
   thumbnail?: string;
   url: string;
-  maxZoom: number;
+  maxZoom?: number;
   attribution?: string;
 }
 
@@ -24,6 +24,10 @@ export interface IOverlay {
 }
 
 export interface IMapState {
+  center: {
+    lat: number; // Latitude
+    lng: number; // Longitude
+  };
   layers: ILayer[];
   layer: ILayer;
   overlays: IOverlay[];
@@ -68,12 +72,21 @@ const overlays: IOverlay[] = [
     url: "/data/methane-metadata.geojson",
   },
   {
-    name: "Rainfall",
-    url: "https://sustainable-caucasus.unepgrid.ch/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Amax_precipitation&outputFormat=json&srs=EPSG%3A28408&srsName=EPSG%3A28408",
+    name: "Tropical Storm Leslie",
+    url: "/data/tropical-storm-leslie.geojson",
   },
+  {
+    name: "Wilidfire",
+    url: "/data/wildfire.geojson",
+  },
+  // {
+  //   name: "Rainfall",
+  //   url: "https://sustainable-caucasus.unepgrid.ch/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Amax_precipitation&outputFormat=json&srs=EPSG%3A28408&srsName=EPSG%3A28408",
+  // },
 ];
 
 export const useMap = create<IMapState>((set) => ({
+  center: { lat: 22.0716, lng: 89.4672 },
   layers,
   layer: layers[0],
   overlays,
