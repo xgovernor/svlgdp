@@ -60,6 +60,10 @@ const layers: ILayer[] = [
 
 const overlays: IOverlay[] = [
   {
+    name: "Rainfall difference (2010 - 2022)",
+    url: "/data/rainfall-difference.geojson",
+  },
+  {
     name: "Study area",
     url: "/data/study-area.geojson",
   },
@@ -79,10 +83,6 @@ const overlays: IOverlay[] = [
     name: "Wilidfire",
     url: "/data/wildfire.geojson",
   },
-  // {
-  //   name: "Rainfall",
-  //   url: "https://sustainable-caucasus.unepgrid.ch/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Amax_precipitation&outputFormat=json&srs=EPSG%3A28408&srsName=EPSG%3A28408",
-  // },
 ];
 
 export const useMap = create<IMapState>((set) => ({

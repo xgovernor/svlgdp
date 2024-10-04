@@ -1,24 +1,343 @@
 {
-"type": "FeatureCollection",
-"name": "hotspot",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.574028345978782, -34.558221869983171 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.472760145325495, -34.37808580799161 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.567203242593738, -34.205474859988684 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.567436579461603, -34.205708196856548 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.532086043980101, -34.20369566637121 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.444701386964759, -34.202178976730089 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.639369960758025, -33.986838214799441 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.689099880721695, -34.027322161373966 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.316869242260509, -34.317768227648564 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.200434145196013, -34.39348604127067 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.711500220036719, -34.436420024957734 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.46170489973829, -34.208508239270856 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 20.19759104676664, -34.484545753954805 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.868906901270694, -34.754429008748815 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.910032524231852, -34.725728574001451 ] } },
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ 19.471534215297069, -34.326372524650985 ] } }
-]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 28.36,
+        "feb": 35.6,
+        "mar": 40.96,
+        "apr": 44.32,
+        "may": 45.67,
+        "jun": 43.78,
+        "jul": 34.13,
+        "aug": 30.9,
+        "sep": 30.62,
+        "oct": 30.19,
+        "nov": 28.36,
+        "dec": 26.88,
+        "ann": 45.67
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 28.03,
+        "feb": 34.91,
+        "mar": 40.27,
+        "apr": 43.77,
+        "may": 44.88,
+        "jun": 43.23,
+        "jul": 34.14,
+        "aug": 30.5,
+        "sep": 30.5,
+        "oct": 29.57,
+        "nov": 28.16,
+        "dec": 26.57,
+        "ann": 44.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 27.92,
+        "feb": 34.46,
+        "mar": 39.9,
+        "apr": 43.52,
+        "may": 44.33,
+        "jun": 42.79,
+        "jul": 33.97,
+        "aug": 30.6,
+        "sep": 30.58,
+        "oct": 29.15,
+        "nov": 28.21,
+        "dec": 26.31,
+        "ann": 44.33
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 28.47,
+        "feb": 35.19,
+        "mar": 40.85,
+        "apr": 44.41,
+        "may": 45.1,
+        "jun": 43.86,
+        "jul": 34.69,
+        "aug": 31.37,
+        "sep": 30.91,
+        "oct": 29.63,
+        "nov": 29.04,
+        "dec": 26.89,
+        "ann": 45.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 28.6,
+        "feb": 35.65,
+        "mar": 41.47,
+        "apr": 45.06,
+        "may": 45.68,
+        "jun": 44.8,
+        "jul": 35.98,
+        "aug": 31.95,
+        "sep": 31.51,
+        "oct": 29.99,
+        "nov": 29.34,
+        "dec": 27.22,
+        "ann": 45.68
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 28.11,
+        "feb": 35.33,
+        "mar": 41.32,
+        "apr": 44.94,
+        "may": 45.53,
+        "jun": 44.9,
+        "jul": 35.77,
+        "aug": 32.08,
+        "sep": 31.71,
+        "oct": 29.99,
+        "nov": 29.02,
+        "dec": 27.06,
+        "ann": 45.53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 27.12,
+        "feb": 34.36,
+        "mar": 40.61,
+        "apr": 44.24,
+        "may": 44.79,
+        "jun": 44.29,
+        "jul": 34.04,
+        "aug": 31.85,
+        "sep": 31.45,
+        "oct": 29.7,
+        "nov": 28.37,
+        "dec": 26.55,
+        "ann": 44.79
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 26.04,
+        "feb": 33.41,
+        "mar": 40.22,
+        "apr": 43.87,
+        "may": 44.35,
+        "jun": 43.86,
+        "jul": 32.82,
+        "aug": 31.76,
+        "sep": 31.25,
+        "oct": 29.5,
+        "nov": 28.08,
+        "dec": 26.22,
+        "ann": 44.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 26.11,
+        "feb": 33.76,
+        "mar": 40.67,
+        "apr": 44.3,
+        "may": 44.62,
+        "jun": 44.29,
+        "jul": 33.32,
+        "aug": 32.1,
+        "sep": 31.6,
+        "oct": 29.92,
+        "nov": 28.34,
+        "dec": 26.4,
+        "ann": 44.62
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 26.75,
+        "feb": 34.29,
+        "mar": 41.1,
+        "apr": 44.48,
+        "may": 44.79,
+        "jun": 44.59,
+        "jul": 33.61,
+        "aug": 32.25,
+        "sep": 31.59,
+        "oct": 30.11,
+        "nov": 28.98,
+        "dec": 26.83,
+        "ann": 44.79
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 27.59,
+        "feb": 34.89,
+        "mar": 41.66,
+        "apr": 44.91,
+        "may": 45.02,
+        "jun": 44.98,
+        "jul": 34.36,
+        "aug": 32.7,
+        "sep": 31.94,
+        "oct": 30.3,
+        "nov": 29.59,
+        "dec": 27.21,
+        "ann": 45.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 28.15,
+        "feb": 35.29,
+        "mar": 42.25,
+        "apr": 45.66,
+        "may": 45.05,
+        "jun": 45.34,
+        "jul": 35.67,
+        "aug": 33.6,
+        "sep": 32.83,
+        "oct": 30.67,
+        "nov": 30.15,
+        "dec": 27.46,
+        "ann": 45.67
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "year": 2010,
+        "jan": 27.83,
+        "feb": 34.99,
+        "mar": 42.52,
+        "apr": 46.42,
+        "may": 44.18,
+        "jun": 45.15,
+        "jul": 37.04,
+        "aug": 34.72,
+        "sep": 33.86,
+        "oct": 31.38,
+        "nov": 31.0,
+        "dec": 27.73,
+        "ann": 46.42
+      }
+    }
+  ]
 }

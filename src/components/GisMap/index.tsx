@@ -5,23 +5,27 @@ import React, { memo, useEffect, useState, } from 'react';
 import {
     MapContainer,
     TileLayer,
-    LayersControl
+    LayersControl,
+    Marker
 } from 'react-leaflet';
-import Leaflet from 'leaflet';
+import Leaflet, { HeatLatLngTuple, Icon } from 'leaflet';
 import MapControls from '../MapControls';
 import CoordinatesDisplay from '../CoordinatesDisplay';
 import 'leaflet/dist/leaflet.css';
 import GeoJsonLayer from './GeoJsonLayer';
 import ErrorBoundary from '../ErrorBoundary';
 import { useMap } from '@/store/map';
-// import "leaflet.heat";
+import "leaflet.heat";
 
 const GisUI = () => {
-    // const [map, setMap] = useState<Leaflet.Map | null>(null);
+    const [map, setMap] = useState<Leaflet.Map | null>(null);
     const { center, layers, layer, overlays, overlay } = useMap();
 
-    // useEffect(() => {
-    //     if (!map) return;
+    useEffect(() => {
+        if (!map) return;
+
+    // Create a heatmap layer
+    // Leaflet.heatLayer(rainfallHeatData, { radius: 25 }).addTo(map);
 
     //     map.on('click', (e) => {
     //         // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -32,7 +36,7 @@ const GisUI = () => {
 
     // Function to add WMTS layer
 
-    // }, [map]);
+    }, [map]);
 
 
 
@@ -47,7 +51,7 @@ const GisUI = () => {
                 style={{ height: '100%', width: '100%' }}
                 zoomControl={false}
                 attributionControl={true}
-                // ref={setMap}
+                ref={setMap}
             >
 
                 <LayersControl position="topleft">
@@ -71,6 +75,19 @@ const GisUI = () => {
                         )
                     })}
 
+
+                    {/* <LayersControl.Overlay name="Rainfall difference (2010 - 2022)" checked={true}>
+                        {rainfallHeatData.map((point, index) => (
+                            <Marker
+                                key={index}
+                                position={[point[0], point[1]]}
+                                icon={new Icon({
+                                    iconUrl: point[2] < 0 ? '/red-icon.png' : '/green-icon.png',
+                                    iconSize: [25, 41],
+                                })}
+                            />
+                        ))}
+                    </LayersControl.Overlay> */}
                 </LayersControl>
 
                 <MapControls />

@@ -1,0 +1,3140 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.67,
+        "ANN_2022": 45.36,
+        "Difference": -0.3100000000000023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.88,
+        "ANN_2022": 44.39,
+        "Difference": -0.490000000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.33,
+        "ANN_2022": 43.61,
+        "Difference": -0.7199999999999989
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.1,
+        "ANN_2022": 44.37,
+        "Difference": -0.730000000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.68,
+        "ANN_2022": 44.98,
+        "Difference": -0.7000000000000028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.53,
+        "ANN_2022": 44.84,
+        "Difference": -0.6899999999999977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.79,
+        "ANN_2022": 44.09,
+        "Difference": -0.6999999999999957
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.35,
+        "ANN_2022": 43.53,
+        "Difference": -0.8200000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.62,
+        "ANN_2022": 43.82,
+        "Difference": -0.7999999999999972
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.79,
+        "ANN_2022": 44.03,
+        "Difference": -0.759999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.1,
+        "ANN_2022": 44.4,
+        "Difference": -0.7000000000000028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.67,
+        "ANN_2022": 44.79,
+        "Difference": -0.8800000000000026
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.42,
+        "ANN_2022": 44.7,
+        "Difference": -1.7199999999999989
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.88,
+        "ANN_2022": 43.92,
+        "Difference": -2.960000000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.62,
+        "ANN_2022": 43.13,
+        "Difference": -3.489999999999995
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.14,
+        "ANN_2022": 43.06,
+        "Difference": -3.0799999999999983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.58,
+        "ANN_2022": 43.63,
+        "Difference": -1.9499999999999957
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.75,
+        "ANN_2022": 44.01,
+        "Difference": -0.740000000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          22.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.97,
+        "ANN_2022": 43.5,
+        "Difference": -0.46999999999999886
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.04,
+        "ANN_2022": 45.99,
+        "Difference": -0.04999999999999716
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.24,
+        "ANN_2022": 45.12,
+        "Difference": -0.12000000000000455
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.79,
+        "ANN_2022": 44.46,
+        "Difference": -0.3299999999999983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.57,
+        "ANN_2022": 44.25,
+        "Difference": -0.3200000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.63,
+        "ANN_2022": 44.34,
+        "Difference": -0.28999999999999915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.43,
+        "ANN_2022": 44.14,
+        "Difference": -0.28999999999999915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.85,
+        "ANN_2022": 43.53,
+        "Difference": -0.3200000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.27,
+        "ANN_2022": 42.87,
+        "Difference": -0.4000000000000057
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.34,
+        "ANN_2022": 43.09,
+        "Difference": -0.25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.59,
+        "ANN_2022": 43.32,
+        "Difference": -0.2700000000000031
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.26,
+        "ANN_2022": 43.82,
+        "Difference": -0.4399999999999977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.2,
+        "ANN_2022": 44.38,
+        "Difference": -0.8200000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.94,
+        "ANN_2022": 44.26,
+        "Difference": -1.6799999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.3,
+        "ANN_2022": 43.3,
+        "Difference": -3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.32,
+        "ANN_2022": 43.14,
+        "Difference": -3.1799999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.31,
+        "ANN_2022": 43.54,
+        "Difference": -2.770000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.28,
+        "ANN_2022": 44.17,
+        "Difference": -2.1099999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.96,
+        "ANN_2022": 44.67,
+        "Difference": -1.2899999999999991
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          23.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45,
+        "ANN_2022": 43.82,
+        "Difference": -1.1799999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.23,
+        "ANN_2022": 46.7,
+        "Difference": 0.47000000000000597
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.92,
+        "ANN_2022": 46.25,
+        "Difference": 0.3299999999999983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.8,
+        "ANN_2022": 45.86,
+        "Difference": 0.060000000000002274
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.19,
+        "ANN_2022": 45.27,
+        "Difference": 0.0800000000000054
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.7,
+        "ANN_2022": 44.83,
+        "Difference": 0.12999999999999545
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.48,
+        "ANN_2022": 44.7,
+        "Difference": 0.22000000000000597
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.46,
+        "ANN_2022": 44.75,
+        "Difference": 0.28999999999999915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.36,
+        "ANN_2022": 44.6,
+        "Difference": 0.240000000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.21,
+        "ANN_2022": 44.69,
+        "Difference": 0.4799999999999969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.94,
+        "ANN_2022": 44.35,
+        "Difference": 0.4100000000000037
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.06,
+        "ANN_2022": 44,
+        "Difference": -0.060000000000002274
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.59,
+        "ANN_2022": 43.85,
+        "Difference": -0.740000000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.05,
+        "ANN_2022": 43.84,
+        "Difference": -1.2099999999999937
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.62,
+        "ANN_2022": 43.42,
+        "Difference": -2.1999999999999957
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.04,
+        "ANN_2022": 43.8,
+        "Difference": -2.240000000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.27,
+        "ANN_2022": 44.2,
+        "Difference": -2.0700000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.24,
+        "ANN_2022": 44.28,
+        "Difference": -1.9600000000000009
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.88,
+        "ANN_2022": 44.15,
+        "Difference": -1.730000000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          23.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.86,
+        "ANN_2022": 43.13,
+        "Difference": -1.7299999999999969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.25,
+        "ANN_2022": 46.91,
+        "Difference": 0.6599999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.28,
+        "ANN_2022": 46.79,
+        "Difference": 0.509999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.29,
+        "ANN_2022": 46.6,
+        "Difference": 0.3100000000000023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.84,
+        "ANN_2022": 46.36,
+        "Difference": 0.519999999999996
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.52,
+        "ANN_2022": 46.13,
+        "Difference": 0.6099999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.39,
+        "ANN_2022": 46.07,
+        "Difference": 0.6799999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.45,
+        "ANN_2022": 46.19,
+        "Difference": 0.7399999999999949
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.66,
+        "ANN_2022": 46.42,
+        "Difference": 0.7600000000000051
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.61,
+        "ANN_2022": 46.43,
+        "Difference": 0.8200000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.16,
+        "ANN_2022": 45.71,
+        "Difference": 0.5500000000000043
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.79,
+        "ANN_2022": 44.63,
+        "Difference": -0.1599999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.71,
+        "ANN_2022": 43.67,
+        "Difference": -1.0399999999999991
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.83,
+        "ANN_2022": 43.38,
+        "Difference": -1.4499999999999957
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45,
+        "ANN_2022": 43.62,
+        "Difference": -1.3800000000000026
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.45,
+        "ANN_2022": 44.14,
+        "Difference": -1.3100000000000023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.74,
+        "ANN_2022": 44.33,
+        "Difference": -1.4100000000000037
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.66,
+        "ANN_2022": 43.98,
+        "Difference": -1.6799999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.26,
+        "ANN_2022": 43.21,
+        "Difference": -2.049999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          24.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.1,
+        "ANN_2022": 42.35,
+        "Difference": -1.75
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.62,
+        "ANN_2022": 47.47,
+        "Difference": 0.8500000000000014
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.62,
+        "ANN_2022": 47.41,
+        "Difference": 0.7899999999999991
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.69,
+        "ANN_2022": 47.47,
+        "Difference": 0.7800000000000011
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.5,
+        "ANN_2022": 47.38,
+        "Difference": 0.8800000000000026
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.38,
+        "ANN_2022": 47.16,
+        "Difference": 0.779999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.3,
+        "ANN_2022": 46.99,
+        "Difference": 0.6900000000000048
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.25,
+        "ANN_2022": 46.92,
+        "Difference": 0.6700000000000017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.22,
+        "ANN_2022": 46.89,
+        "Difference": 0.6700000000000017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.25,
+        "ANN_2022": 46.78,
+        "Difference": 0.5300000000000011
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.08,
+        "ANN_2022": 46.16,
+        "Difference": 0.0799999999999983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.8,
+        "ANN_2022": 45.16,
+        "Difference": -0.6400000000000006
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.51,
+        "ANN_2022": 44.14,
+        "Difference": -1.3699999999999974
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.4,
+        "ANN_2022": 43.6,
+        "Difference": -1.7999999999999972
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.24,
+        "ANN_2022": 43.87,
+        "Difference": -1.3700000000000045
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.01,
+        "ANN_2022": 43.85,
+        "Difference": -1.1599999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.85,
+        "ANN_2022": 43.66,
+        "Difference": -1.1900000000000048
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.74,
+        "ANN_2022": 43.28,
+        "Difference": -1.4600000000000009
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.53,
+        "ANN_2022": 42.55,
+        "Difference": -1.980000000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          24.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.26,
+        "ANN_2022": 41.33,
+        "Difference": -1.9299999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.48,
+        "ANN_2022": 48.43,
+        "Difference": 0.9500000000000028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.44,
+        "ANN_2022": 48.37,
+        "Difference": 0.9299999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.32,
+        "ANN_2022": 48.27,
+        "Difference": 0.9500000000000028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.25,
+        "ANN_2022": 48.03,
+        "Difference": 0.7800000000000011
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.16,
+        "ANN_2022": 47.63,
+        "Difference": 0.47000000000000597
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.03,
+        "ANN_2022": 47.33,
+        "Difference": 0.29999999999999716
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.88,
+        "ANN_2022": 47.13,
+        "Difference": 0.25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.76,
+        "ANN_2022": 46.84,
+        "Difference": 0.0800000000000054
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.58,
+        "ANN_2022": 46.4,
+        "Difference": -0.17999999999999972
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.43,
+        "ANN_2022": 45.89,
+        "Difference": -0.5399999999999991
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.23,
+        "ANN_2022": 45.27,
+        "Difference": -0.9599999999999937
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.97,
+        "ANN_2022": 44.61,
+        "Difference": -1.3599999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.76,
+        "ANN_2022": 44.04,
+        "Difference": -1.7199999999999989
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.66,
+        "ANN_2022": 43.74,
+        "Difference": -1.9199999999999946
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.9,
+        "ANN_2022": 43.31,
+        "Difference": -1.5899999999999963
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.27,
+        "ANN_2022": 42.9,
+        "Difference": -1.3700000000000045
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44,
+        "ANN_2022": 42.39,
+        "Difference": -1.6099999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.87,
+        "ANN_2022": 41.46,
+        "Difference": -2.4099999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          25.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 42.68,
+        "ANN_2022": 39.69,
+        "Difference": -2.990000000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.94,
+        "ANN_2022": 48.71,
+        "Difference": 0.7700000000000031
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.89,
+        "ANN_2022": 48.56,
+        "Difference": 0.6700000000000017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.59,
+        "ANN_2022": 48.16,
+        "Difference": 0.5699999999999932
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.52,
+        "ANN_2022": 47.84,
+        "Difference": 0.3200000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.4,
+        "ANN_2022": 47.35,
+        "Difference": -0.04999999999999716
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.23,
+        "ANN_2022": 47.04,
+        "Difference": -0.18999999999999773
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.03,
+        "ANN_2022": 46.84,
+        "Difference": -0.18999999999999773
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.79,
+        "ANN_2022": 46.34,
+        "Difference": -0.44999999999999574
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.41,
+        "ANN_2022": 45.59,
+        "Difference": -0.8199999999999932
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.08,
+        "ANN_2022": 45.1,
+        "Difference": -0.9799999999999969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.82,
+        "ANN_2022": 44.74,
+        "Difference": -1.0799999999999983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.62,
+        "ANN_2022": 44.36,
+        "Difference": -1.259999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.46,
+        "ANN_2022": 43.75,
+        "Difference": -1.7100000000000009
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.22,
+        "ANN_2022": 43,
+        "Difference": -2.219999999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.49,
+        "ANN_2022": 42.61,
+        "Difference": -1.8800000000000026
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.8,
+        "ANN_2022": 42.11,
+        "Difference": -1.6899999999999977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.38,
+        "ANN_2022": 41.18,
+        "Difference": -2.200000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.15,
+        "ANN_2022": 39.64,
+        "Difference": -3.509999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 42.2,
+        "ANN_2022": 38.28,
+        "Difference": -3.9200000000000017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.84,
+        "ANN_2022": 48.19,
+        "Difference": 0.3499999999999943
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.67,
+        "ANN_2022": 47.79,
+        "Difference": 0.11999999999999744
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.46,
+        "ANN_2022": 47.39,
+        "Difference": -0.07000000000000028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.44,
+        "ANN_2022": 47.09,
+        "Difference": -0.3499999999999943
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.34,
+        "ANN_2022": 46.79,
+        "Difference": -0.5500000000000043
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.12,
+        "ANN_2022": 46.51,
+        "Difference": -0.6099999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.8,
+        "ANN_2022": 46.17,
+        "Difference": -0.6299999999999955
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.38,
+        "ANN_2022": 45.62,
+        "Difference": -0.7600000000000051
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.82,
+        "ANN_2022": 44.76,
+        "Difference": -1.0600000000000023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.38,
+        "ANN_2022": 44.22,
+        "Difference": -1.1600000000000037
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.14,
+        "ANN_2022": 43.88,
+        "Difference": -1.259999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.97,
+        "ANN_2022": 43.44,
+        "Difference": -1.5300000000000011
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.56,
+        "ANN_2022": 42.45,
+        "Difference": -2.1099999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.9,
+        "ANN_2022": 41.43,
+        "Difference": -2.469999999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 42.94,
+        "ANN_2022": 40.93,
+        "Difference": -2.009999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 42.2,
+        "ANN_2022": 40.34,
+        "Difference": -1.8599999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 41.94,
+        "ANN_2022": 39.33,
+        "Difference": -2.6099999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 42.14,
+        "ANN_2022": 37.9,
+        "Difference": -4.240000000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          26.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 41.18,
+        "ANN_2022": 36.89,
+        "Difference": -4.289999999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.69,
+        "ANN_2022": 47.4,
+        "Difference": -0.28999999999999915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.45,
+        "ANN_2022": 46.97,
+        "Difference": -0.480000000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.35,
+        "ANN_2022": 46.73,
+        "Difference": -0.6200000000000045
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.18,
+        "ANN_2022": 46.17,
+        "Difference": -1.009999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.12,
+        "ANN_2022": 46.03,
+        "Difference": -1.0899999999999963
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.87,
+        "ANN_2022": 45.76,
+        "Difference": -1.1099999999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.38,
+        "ANN_2022": 45.19,
+        "Difference": -1.1900000000000048
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.79,
+        "ANN_2022": 44.57,
+        "Difference": -1.2199999999999989
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.04,
+        "ANN_2022": 43.71,
+        "Difference": -1.3299999999999983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.49,
+        "ANN_2022": 42.82,
+        "Difference": -1.6700000000000017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.01,
+        "ANN_2022": 41.98,
+        "Difference": -2.030000000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 43.3,
+        "ANN_2022": 40.91,
+        "Difference": -2.3900000000000006
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 41.89,
+        "ANN_2022": 38.96,
+        "Difference": -2.9299999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 40.35,
+        "ANN_2022": 37.39,
+        "Difference": -2.960000000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 38.75,
+        "ANN_2022": 36.34,
+        "Difference": -2.4099999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 37.33,
+        "ANN_2022": 35.17,
+        "Difference": -2.1599999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 36.46,
+        "ANN_2022": 33.83,
+        "Difference": -2.6300000000000026
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 36.61,
+        "ANN_2022": 32.82,
+        "Difference": -3.789999999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          26.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 33.82,
+        "ANN_2022": 31.3,
+        "Difference": -2.5199999999999996
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.5,
+        "ANN_2022": 46.7,
+        "Difference": -0.7999999999999972
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.24,
+        "ANN_2022": 46.34,
+        "Difference": -0.8999999999999986
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.12,
+        "ANN_2022": 45.99,
+        "Difference": -1.1299999999999955
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.78,
+        "ANN_2022": 45.33,
+        "Difference": -1.4500000000000028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.39,
+        "ANN_2022": 44.94,
+        "Difference": -1.4500000000000028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.85,
+        "ANN_2022": 44.41,
+        "Difference": -1.4400000000000048
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.21,
+        "ANN_2022": 43.68,
+        "Difference": -1.5300000000000011
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.6,
+        "ANN_2022": 43.03,
+        "Difference": -1.5700000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44,
+        "ANN_2022": 41.96,
+        "Difference": -2.039999999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 42.5,
+        "ANN_2022": 39.81,
+        "Difference": -2.6899999999999977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 40.54,
+        "ANN_2022": 37.44,
+        "Difference": -3.1000000000000014
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 37.93,
+        "ANN_2022": 34.77,
+        "Difference": -3.1599999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 33.87,
+        "ANN_2022": 30.86,
+        "Difference": -3.009999999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 30.45,
+        "ANN_2022": 28,
+        "Difference": -2.4499999999999993
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 29.31,
+        "ANN_2022": 27.57,
+        "Difference": -1.7399999999999984
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 27.22,
+        "ANN_2022": 25.99,
+        "Difference": -1.2300000000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 24.61,
+        "ANN_2022": 23.48,
+        "Difference": -1.129999999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 25.55,
+        "ANN_2022": 24.04,
+        "Difference": -1.5100000000000016
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          27.25
+        ]
+      },
+      "properties": {
+        "ANN_2010": 23.11,
+        "ANN_2022": 22.89,
+        "Difference": -0.21999999999999886
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.43,
+        "ANN_2022": 46.31,
+        "Difference": -1.1199999999999974
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 47.18,
+        "ANN_2022": 45.83,
+        "Difference": -1.3500000000000014
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 46.77,
+        "ANN_2022": 45.21,
+        "Difference": -1.5600000000000023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 45.9,
+        "ANN_2022": 44.03,
+        "Difference": -1.8699999999999974
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 44.04,
+        "ANN_2022": 42.14,
+        "Difference": -1.8999999999999986
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 42.08,
+        "ANN_2022": 40.16,
+        "Difference": -1.9200000000000017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 40.72,
+        "ANN_2022": 38.56,
+        "Difference": -2.1599999999999966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 40.41,
+        "ANN_2022": 37.73,
+        "Difference": -2.6799999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 39.76,
+        "ANN_2022": 36.43,
+        "Difference": -3.3299999999999983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 36.58,
+        "ANN_2022": 33.14,
+        "Difference": -3.4399999999999977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 32.27,
+        "ANN_2022": 29.13,
+        "Difference": -3.140000000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 27.52,
+        "ANN_2022": 25.06,
+        "Difference": -2.460000000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 22.3,
+        "ANN_2022": 21.03,
+        "Difference": -1.2699999999999996
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 18.48,
+        "ANN_2022": 17.45,
+        "Difference": -1.0300000000000011
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 19.39,
+        "ANN_2022": 18.91,
+        "Difference": -0.4800000000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 18.61,
+        "ANN_2022": 18.5,
+        "Difference": -0.10999999999999943
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 16.08,
+        "ANN_2022": 15.97,
+        "Difference": -0.10999999999999766
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.75,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 18.07,
+        "ANN_2022": 17.74,
+        "Difference": -0.33000000000000185
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.25,
+          27.75
+        ]
+      },
+      "properties": {
+        "ANN_2010": 18.04,
+        "ANN_2022": 17.93,
+        "Difference": -0.10999999999999943
+      }
+    }
+  ]
+}
