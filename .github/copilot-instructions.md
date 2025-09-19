@@ -6,7 +6,7 @@ SVLGDP is a Next.js 14+ GIS platform for environmental data visualization using 
 
 ### Core Components Architecture
 - **Main Layout**: `src/app/layout.tsx` uses client-side rendering with SessionProvider wrapping
-- **Entry Point**: `src/app/page.tsx` renders `<GisUI />` component only  
+- **Entry Point**: `src/app/page.tsx` renders `<GisUI />` component only
 - **GIS UI**: `src/components/gis-ui.tsx` contains the main layout with `<Sidebar />` and dynamic `<GisMap />`
 - **Map Component**: `src/components/GisMap/index.tsx` is the core Leaflet map with error boundaries
 
@@ -29,7 +29,7 @@ Always use `ssr: false` for Leaflet components to avoid hydration issues.
 
 #### Sidebar Architecture
 Sidebar uses a toolbox + drawer pattern:
-- `src/components/Sidebar/Toolbox.tsx`: Icon-based navigation  
+- `src/components/Sidebar/Toolbox.tsx`: Icon-based navigation
 - `src/components/Sidebar/SidebarLayer.tsx`: Layer controls
 - `src/components/Sidebar/SidebarNote.tsx`: Note management
 - State managed via `useLayout()` hook with drawer toggling
@@ -80,6 +80,6 @@ npm run lint         # ESLint checking
 
 ### Common Patterns
 - Store actions return updated state directly (no separate dispatch)
-- Component props use TypeScript interfaces from global declarations  
+- Component props use TypeScript interfaces from global declarations
 - Layer/overlay toggling uses array manipulation in Zustand stores
 - Dynamic imports essential for SSR compatibility with Leaflet
