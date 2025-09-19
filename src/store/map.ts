@@ -83,6 +83,22 @@ const overlays: IOverlay[] = [
     name: "Wilidfire",
     url: "/data/wildfire.geojson",
   },
+  {
+    name: "Soil Data",
+    url: "/data/soil-data.geojson",
+  },
+  {
+    name: "Weather Stations",
+    url: "/data/weather-stations.geojson",
+  },
+  {
+    name: "Water Quality",
+    url: "/data/water-quality.geojson",
+  },
+  {
+    name: "Soil Type Polygons",
+    url: "/data/soil-type-polygons.geojson",
+  },
 ];
 
 export const useMap = create<IMapState>((set) => ({

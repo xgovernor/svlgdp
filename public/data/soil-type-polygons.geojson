@@ -1,0 +1,235 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Sylhet",
+        "soilType": "Acidic Hill Soil",
+        "fertilityIndex": 6.5,
+        "phLevel": 5.2,
+        "organicMatter": 3.8,
+        "drainageClass": "Well drained",
+        "primaryCrop": "Tea",
+        "area_hectares": 125000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [91.7000, 24.7000],
+          [92.2000, 24.7000],
+          [92.2000, 25.3000],
+          [91.7000, 25.3000],
+          [91.7000, 24.7000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Sylhet",
+        "soilType": "Terrace Soil",
+        "fertilityIndex": 7.2,
+        "phLevel": 5.8,
+        "organicMatter": 4.2,
+        "drainageClass": "Moderately well drained",
+        "primaryCrop": "Rice",
+        "area_hectares": 89000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [91.5000, 24.5000],
+          [91.7000, 24.5000],
+          [91.7000, 24.9000],
+          [91.5000, 24.9000],
+          [91.5000, 24.5000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Sylhet",
+        "soilType": "Haor Basin Soil",
+        "fertilityIndex": 8.1,
+        "phLevel": 6.4,
+        "organicMatter": 5.1,
+        "drainageClass": "Poorly drained",
+        "primaryCrop": "Boro Rice",
+        "area_hectares": 156000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [90.8000, 24.4000],
+          [91.5000, 24.4000],
+          [91.5000, 25.0000],
+          [90.8000, 25.0000],
+          [90.8000, 24.4000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Rajshahi",
+        "soilType": "Calcareous Alluvial Soil",
+        "fertilityIndex": 8.7,
+        "phLevel": 7.8,
+        "organicMatter": 2.9,
+        "drainageClass": "Well drained",
+        "primaryCrop": "Wheat",
+        "area_hectares": 210000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [88.3000, 24.2000],
+          [89.2000, 24.2000],
+          [89.2000, 25.0000],
+          [88.3000, 25.0000],
+          [88.3000, 24.2000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Rajshahi",
+        "soilType": "Red Clay Soil",
+        "fertilityIndex": 6.8,
+        "phLevel": 6.9,
+        "organicMatter": 3.4,
+        "drainageClass": "Moderately well drained",
+        "primaryCrop": "Sugarcane",
+        "area_hectares": 145000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [88.8000, 23.8000],
+          [89.5000, 23.8000],
+          [89.5000, 24.4000],
+          [88.8000, 24.4000],
+          [88.8000, 23.8000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Rajshahi",
+        "soilType": "Sandy Loam Soil",
+        "fertilityIndex": 7.5,
+        "phLevel": 7.2,
+        "organicMatter": 2.1,
+        "drainageClass": "Well drained",
+        "primaryCrop": "Maize",
+        "area_hectares": 98000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [89.2000, 24.5000],
+          [89.8000, 24.5000],
+          [89.8000, 25.1000],
+          [89.2000, 25.1000],
+          [89.2000, 24.5000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Barisal",
+        "soilType": "Deltaic Alluvial Soil",
+        "fertilityIndex": 8.9,
+        "phLevel": 6.8,
+        "organicMatter": 4.7,
+        "drainageClass": "Moderately well drained",
+        "primaryCrop": "Rice",
+        "area_hectares": 185000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [89.8000, 22.3000],
+          [90.6000, 22.3000],
+          [90.6000, 23.1000],
+          [89.8000, 23.1000],
+          [89.8000, 22.3000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Barisal",
+        "soilType": "Coastal Saline Soil",
+        "fertilityIndex": 4.2,
+        "phLevel": 8.3,
+        "organicMatter": 1.8,
+        "drainageClass": "Poorly drained",
+        "primaryCrop": "Salt-tolerant Rice",
+        "area_hectares": 167000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [90.0000, 21.8000],
+          [90.8000, 21.8000],
+          [90.8000, 22.5000],
+          [90.0000, 22.5000],
+          [90.0000, 21.8000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Barisal",
+        "soilType": "Tidal Floodplain Soil",
+        "fertilityIndex": 7.8,
+        "phLevel": 7.1,
+        "organicMatter": 3.9,
+        "drainageClass": "Imperfectly drained",
+        "primaryCrop": "Jute",
+        "area_hectares": 134000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [90.3000, 22.8000],
+          [91.1000, 22.8000],
+          [91.1000, 23.4000],
+          [90.3000, 23.4000],
+          [90.3000, 22.8000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Barisal",
+        "soilType": "Peat Soil",
+        "fertilityIndex": 9.2,
+        "phLevel": 5.9,
+        "organicMatter": 8.3,
+        "drainageClass": "Very poorly drained",
+        "primaryCrop": "Vegetables",
+        "area_hectares": 76000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [89.5000, 22.5000],
+          [89.9000, 22.5000],
+          [89.9000, 22.9000],
+          [89.5000, 22.9000],
+          [89.5000, 22.5000]
+        ]]
+      }
+    }
+  ]
+}

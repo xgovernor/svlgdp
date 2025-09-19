@@ -1,0 +1,189 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhaka",
+        "district_code": "DH",
+        "pH": 6.2,
+        "nitrogen": 45,
+        "phosphorus": 28,
+        "potassium": 62,
+        "soil_type": "Alluvial",
+        "area_km2": 1463.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [90.3563, 23.7104],
+          [90.4563, 23.7104],
+          [90.4563, 23.8104],
+          [90.3563, 23.8104],
+          [90.3563, 23.7104]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chittagong",
+        "district_code": "CH",
+        "pH": 5.8,
+        "nitrogen": 38,
+        "phosphorus": 22,
+        "potassium": 55,
+        "soil_type": "Hill Soil",
+        "area_km2": 5282.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [91.7000, 22.2000],
+          [92.0000, 22.2000],
+          [92.0000, 22.6000],
+          [91.7000, 22.6000],
+          [91.7000, 22.2000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sylhet",
+        "district_code": "SY",
+        "pH": 4.9,
+        "nitrogen": 52,
+        "phosphorus": 35,
+        "potassium": 48,
+        "soil_type": "Acidic",
+        "area_km2": 3490.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [91.8000, 24.8000],
+          [92.2000, 24.8000],
+          [92.2000, 25.2000],
+          [91.8000, 25.2000],
+          [91.8000, 24.8000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajshahi",
+        "district_code": "RA",
+        "pH": 7.1,
+        "nitrogen": 68,
+        "phosphorus": 42,
+        "potassium": 78,
+        "soil_type": "Calcareous",
+        "area_km2": 2407.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [88.5000, 24.3000],
+          [89.0000, 24.3000],
+          [89.0000, 24.8000],
+          [88.5000, 24.8000],
+          [88.5000, 24.3000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khulna",
+        "district_code": "KH",
+        "pH": 8.2,
+        "nitrogen": 25,
+        "phosphorus": 18,
+        "potassium": 85,
+        "soil_type": "Saline",
+        "area_km2": 4394.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [89.4000, 22.7000],
+          [89.9000, 22.7000],
+          [89.9000, 23.2000],
+          [89.4000, 23.2000],
+          [89.4000, 22.7000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barisal",
+        "district_code": "BA",
+        "pH": 6.8,
+        "nitrogen": 58,
+        "phosphorus": 31,
+        "potassium": 42,
+        "soil_type": "Deltaic",
+        "area_km2": 2790.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [90.2000, 22.5000],
+          [90.7000, 22.5000],
+          [90.7000, 23.0000],
+          [90.2000, 23.0000],
+          [90.2000, 22.5000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rangpur",
+        "district_code": "RG",
+        "pH": 6.5,
+        "nitrogen": 72,
+        "phosphorus": 48,
+        "potassium": 65,
+        "soil_type": "Teesta Alluvium",
+        "area_km2": 2370.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [89.1000, 25.5000],
+          [89.6000, 25.5000],
+          [89.6000, 26.0000],
+          [89.1000, 26.0000],
+          [89.1000, 25.5000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mymensingh",
+        "district_code": "MY",
+        "pH": 5.2,
+        "nitrogen": 88,
+        "phosphorus": 55,
+        "potassium": 38,
+        "soil_type": "Old Brahmaputra Floodplain",
+        "area_km2": 4363.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [90.2000, 24.5000],
+          [90.8000, 24.5000],
+          [90.8000, 25.1000],
+          [90.2000, 25.1000],
+          [90.2000, 24.5000]
+        ]]
+      }
+    }
+  ]
+}

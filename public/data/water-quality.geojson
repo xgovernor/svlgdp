@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ001",
+        "location_name": "Padma River - Dhaka",
+        "water_body": "Padma River",
+        "type": "River",
+        "pH": 7.2,
+        "salinity": 0.3,
+        "turbidity": 45.8,
+        "dissolvedOxygen": 6.5,
+        "temperature": 28.5,
+        "collection_date": "2025-09-19",
+        "depth_meters": 2.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.3675, 23.7985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ002",
+        "location_name": "Karnaphuli River - Chittagong",
+        "water_body": "Karnaphuli River",
+        "type": "River",
+        "pH": 6.8,
+        "salinity": 1.2,
+        "turbidity": 62.3,
+        "dissolvedOxygen": 5.8,
+        "temperature": 26.8,
+        "collection_date": "2025-09-19",
+        "depth_meters": 3.2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.8012, 22.3245]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ003",
+        "location_name": "Bay of Bengal - Cox's Bazar",
+        "water_body": "Bay of Bengal",
+        "type": "Coastal",
+        "pH": 8.1,
+        "salinity": 9.2,
+        "turbidity": 12.4,
+        "dissolvedOxygen": 7.8,
+        "temperature": 29.3,
+        "collection_date": "2025-09-19",
+        "depth_meters": 5.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.9856, 21.4189]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ004",
+        "location_name": "Brahmaputra River - Mymensingh",
+        "water_body": "Brahmaputra River",
+        "type": "River",
+        "pH": 7.5,
+        "salinity": 0.1,
+        "turbidity": 78.9,
+        "dissolvedOxygen": 8.2,
+        "temperature": 25.1,
+        "collection_date": "2025-09-19",
+        "depth_meters": 4.8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.4598, 24.7356]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ005",
+        "location_name": "Rupsha River - Khulna",
+        "water_body": "Rupsha River",
+        "type": "River",
+        "pH": 6.4,
+        "salinity": 2.8,
+        "turbidity": 89.7,
+        "dissolvedOxygen": 4.1,
+        "temperature": 30.7,
+        "collection_date": "2025-09-19",
+        "depth_meters": 1.8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.5234, 22.8145]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ006",
+        "location_name": "Surma River - Sylhet",
+        "water_body": "Surma River",
+        "type": "River",
+        "pH": 6.9,
+        "salinity": 0.2,
+        "turbidity": 35.2,
+        "dissolvedOxygen": 9.1,
+        "temperature": 24.8,
+        "collection_date": "2025-09-19",
+        "depth_meters": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.8745, 24.9012]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ007",
+        "location_name": "Ganges River - Rajshahi",
+        "water_body": "Ganges River",
+        "type": "River",
+        "pH": 8.3,
+        "salinity": 0.4,
+        "turbidity": 52.6,
+        "dissolvedOxygen": 6.9,
+        "temperature": 32.1,
+        "collection_date": "2025-09-19",
+        "depth_meters": 6.2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.6189, 24.3598]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ008",
+        "location_name": "Sundarbans Mangrove - Bagerhat",
+        "water_body": "Sundarbans",
+        "type": "Coastal Mangrove",
+        "pH": 7.8,
+        "salinity": 7.5,
+        "turbidity": 28.1,
+        "dissolvedOxygen": 5.2,
+        "temperature": 27.9,
+        "collection_date": "2025-09-19",
+        "depth_meters": 2.1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.7845, 22.3678]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ009",
+        "location_name": "Meghna River - Barisal",
+        "water_body": "Meghna River",
+        "type": "River",
+        "pH": 7.1,
+        "salinity": 1.8,
+        "turbidity": 67.4,
+        "dissolvedOxygen": 7.3,
+        "temperature": 28.2,
+        "collection_date": "2025-09-19",
+        "depth_meters": 4.1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.3756, 22.7234]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ010",
+        "location_name": "Teesta River - Rangpur",
+        "water_body": "Teesta River",
+        "type": "River",
+        "pH": 8.7,
+        "salinity": 0.1,
+        "turbidity": 94.5,
+        "dissolvedOxygen": 2.8,
+        "temperature": 23.6,
+        "collection_date": "2025-09-19",
+        "depth_meters": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.2567, 25.7123]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ011",
+        "location_name": "Coastal Waters - Patuakhali",
+        "water_body": "Bay of Bengal",
+        "type": "Coastal",
+        "pH": 8.5,
+        "salinity": 8.9,
+        "turbidity": 18.7,
+        "dissolvedOxygen": 8.7,
+        "temperature": 30.1,
+        "collection_date": "2025-09-19",
+        "depth_meters": 3.8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.3234, 22.2145]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_id": "WQ012",
+        "location_name": "Jamuna River - Tangail",
+        "water_body": "Jamuna River",
+        "type": "River",
+        "pH": 7.6,
+        "salinity": 0.2,
+        "turbidity": 81.3,
+        "dissolvedOxygen": 6.1,
+        "temperature": 26.7,
+        "collection_date": "2025-09-19",
+        "depth_meters": 5.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.8934, 24.2789]
+      }
+    }
+  ]
+}
