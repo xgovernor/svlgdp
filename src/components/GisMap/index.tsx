@@ -13,6 +13,7 @@ import MapControls from '../MapControls';
 import CoordinatesDisplay from '../CoordinatesDisplay';
 import 'leaflet/dist/leaflet.css';
 import GeoJsonLayer from './GeoJsonLayer';
+import HeatmapLayer from './HeatmapLayer';
 import ErrorBoundary from '../ErrorBoundary';
 import { useMap } from '@/store/map';
 import "leaflet.heat";
@@ -66,11 +67,15 @@ const GisUI = () => {
                 </LayersControl>
 
                 <LayersControl position="topleft">
-                    {overlays.map(({ name, ...rest }, index) => {
+                    {overlays.map(({ name, type, ...rest }, index) => {
                         const checked = overlay.filter((item) => item.url === rest.url)[0] ? true : false;
                         return (
                             <LayersControl.Overlay key={index} name={name} checked={checked}>
-                                <GeoJsonLayer name={name} {...rest} />
+                                {type === 'heatmap' ? (
+                                    <HeatmapLayer name={name} {...(rest as any)} />
+                                ) : (
+                                    <GeoJsonLayer name={name} {...(rest as any)} />
+                                )}
                             </LayersControl.Overlay>
                         )
                     })}

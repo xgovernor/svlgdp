@@ -21,6 +21,7 @@ export interface IOverlay {
   thumbnail?: string;
   url: string;
   attribution?: string;
+  type?: 'geojson' | 'heatmap';
 }
 
 export interface IMapState {
@@ -59,6 +60,11 @@ const layers: ILayer[] = [
 ];
 
 const overlays: IOverlay[] = [
+  {
+    name: "Soil Nitrogen (Heatmap)",
+    url: "/data/soil-nitrogen-data.geojson",
+    type: 'heatmap',
+  },
   // {
   //   name: "Rainfall difference (2010 - 2022)",
   //   url: "/data/rainfall-difference.geojson",
