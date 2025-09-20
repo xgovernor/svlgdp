@@ -84,10 +84,6 @@ const overlays: IOverlay[] = [
     url: "/data/soil-data.geojson",
   },
   {
-    name: "Soil Nitrogen",
-    url: "/data/soil-nitrogen-data.geojson",
-  },
-  {
     name: "Soil Potassium",
     url: "/data/soil-potassium-data.geojson",
   },
