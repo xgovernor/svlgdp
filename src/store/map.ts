@@ -80,6 +80,10 @@ const overlays: IOverlay[] = [
   //   url: "/data/wildfire.geojson",
   // },
   {
+    name: "Soil Health",
+    url: "/data/soil-data.geojson",
+  },
+  {
     name: "Soil Nitrogen",
     url: "/data/soil-nitrogen-data.geojson",
   },
