@@ -1,6 +1,6 @@
-import { memo, useMemo } from "react";
+import { memo } from "react";
 import { GeoJSON } from "react-leaflet";
-import { GeoJsonObject, Feature, Geometry, FeatureCollection } from "geojson";
+import { GeoJsonObject, Feature, Geometry } from "geojson";
 import useSWR from "swr";
 import { fetcher } from "@/utils/fetcher";
 import L from "leaflet";
@@ -13,7 +13,7 @@ interface GeoJsonLayerProps {
     onFeatureClick?: (feature: Feature<Geometry>, layer: L.Layer) => void;
 }
 
-const GeoJsonLayer = ({ url, name, style, interactive = true, onFeatureClick }: GeoJsonLayerProps) => {
+const GeoJsonLayer: React.FC<GeoJsonLayerProps> = ({ url, name, style, interactive = true, onFeatureClick }: GeoJsonLayerProps) => {
     // Fetch the GeoJSON data with error handling
     const { data, error, isLoading } = useSWR<GeoJsonObject>(url, fetcher, {
         errorRetryCount: 3,
@@ -21,45 +21,6 @@ const GeoJsonLayer = ({ url, name, style, interactive = true, onFeatureClick }: 
         revalidateOnFocus: false,
     });
 
-    // Memoize style calculations for performance
-    const featureStyles = useMemo(() => {
-        if (!data) return {};
-
-        const styles: Record<string, L.PathOptions> = {};
-
-        // Type guard to check if data is a FeatureCollection
-        const isFeatureCollection = (obj: GeoJsonObject): obj is FeatureCollection => {
-            return obj.type === 'FeatureCollection' && 'features' in obj;
-        };
-
-        if (isFeatureCollection(data) && data.features) {
-            data.features.forEach((feature: Feature<Geometry>, index: number) => {
-                const color = feature.properties?.color || '#3388ff'; // Default Leaflet blue
-                const geometryType = feature.geometry?.type;
-
-                if (geometryType === 'Polygon' || geometryType === 'MultiPolygon') {
-                    styles[index] = {
-                        fillColor: color,
-                        weight: 2,
-                        opacity: 1,
-                        color: '#ffffff',
-                        dashArray: '3',
-                        fillOpacity: 0.7,
-                        ...style,
-                    };
-                } else {
-                    styles[index] = {
-                        color: color,
-                        weight: 3,
-                        opacity: 0.8,
-                        ...style,
-                    };
-                }
-            });
-        }
-
-        return styles;
-    }, [data, style]);
 
     if (error) {
         console.error(`Error loading GeoJSON for ${name}:`, error);

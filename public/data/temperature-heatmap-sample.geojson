@@ -1,0 +1,305 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.4672, 22.0716]
+      },
+      "properties": {
+        "station_id": "WS_001",
+        "station_name": "Khulna Weather Station",
+        "current_temperature": 22.5,
+        "humidity": 78,
+        "pressure": 1012.3,
+        "rainfall": 25.4,
+        "wind_speed": 12.5,
+        "wind_direction": "SE",
+        "visibility": 8.5,
+        "uv_index": 7,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.5672, 22.1716]
+      },
+      "properties": {
+        "station_id": "WS_002",
+        "station_name": "Bagerhat Weather Station",
+        "current_temperature": 24.7,
+        "humidity": 82,
+        "pressure": 1013.1,
+        "rainfall": 18.2,
+        "wind_speed": 8.3,
+        "wind_direction": "S",
+        "visibility": 9.2,
+        "uv_index": 6,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.3672, 22.2716]
+      },
+      "properties": {
+        "station_id": "WS_003",
+        "station_name": "Satkhira Weather Station",
+        "current_temperature": -35.2,
+        "humidity": 71,
+        "pressure": 1011.8,
+        "rainfall": 32.1,
+        "wind_speed": 15.2,
+        "wind_direction": "SW",
+        "visibility": 7.8,
+        "uv_index": 8,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.6672, 22.0216]
+      },
+      "properties": {
+        "station_id": "WS_004",
+        "station_name": "Mongla Weather Station",
+        "current_temperature": 29.8,
+        "humidity": 85,
+        "pressure": 1013.7,
+        "rainfall": 15.6,
+        "wind_speed": 9.8,
+        "wind_direction": "SE",
+        "visibility": 8.9,
+        "uv_index": 5,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.7672, 22.1216]
+      },
+      "properties": {
+        "station_id": "WS_005",
+        "station_name": "Dacope Weather Station",
+        "current_temperature": -31.4,
+        "humidity": 76,
+        "pressure": 1012.9,
+        "rainfall": 22.8,
+        "wind_speed": 11.7,
+        "wind_direction": "S",
+        "visibility": 8.3,
+        "uv_index": 7,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.2672, 22.0516]
+      },
+      "properties": {
+        "station_id": "WS_006",
+        "station_name": "Koyra Weather Station",
+        "current_temperature": 27.9,
+        "humidity": 88,
+        "pressure": 1014.2,
+        "rainfall": 42.3,
+        "wind_speed": 7.4,
+        "wind_direction": "E",
+        "visibility": 9.7,
+        "uv_index": 4,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.8672, 22.2216]
+      },
+      "properties": {
+        "station_id": "WS_007",
+        "station_name": "Paikgacha Weather Station",
+        "current_temperature": 36.8,
+        "humidity": 68,
+        "pressure": 1011.1,
+        "rainfall": 8.9,
+        "wind_speed": 18.6,
+        "wind_direction": "SW",
+        "visibility": 6.5,
+        "uv_index": 9,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.4172, 21.9716]
+      },
+      "properties": {
+        "station_id": "WS_008",
+        "station_name": "Dumuria Weather Station",
+        "current_temperature": 30.6,
+        "humidity": 79,
+        "pressure": 1013.4,
+        "rainfall": 19.7,
+        "wind_speed": 10.2,
+        "wind_direction": "SE",
+        "visibility": 8.8,
+        "uv_index": 6,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.5172, 21.8716]
+      },
+      "properties": {
+        "station_id": "WS_009",
+        "station_name": "Phultala Weather Station",
+        "current_temperature": 33.1,
+        "humidity": 73,
+        "pressure": 1012.6,
+        "rainfall": 28.5,
+        "wind_speed": 13.8,
+        "wind_direction": "S",
+        "visibility": 7.9,
+        "uv_index": 8,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.3172, 21.9216]
+      },
+      "properties": {
+        "station_id": "WS_010",
+        "station_name": "Rupsa Weather Station",
+        "current_temperature": 26.4,
+        "humidity": 91,
+        "pressure": 1014.8,
+        "rainfall": 38.1,
+        "wind_speed": 6.9,
+        "wind_direction": "E",
+        "visibility": 10.2,
+        "uv_index": 3,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.6172, 21.9216]
+      },
+      "properties": {
+        "station_id": "WS_011",
+        "station_name": "Terokhada Weather Station",
+        "current_temperature": 34.7,
+        "humidity": 69,
+        "pressure": 1011.5,
+        "rainfall": 12.4,
+        "wind_speed": 16.3,
+        "wind_direction": "SW",
+        "visibility": 7.1,
+        "uv_index": 8,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.7172, 22.0016]
+      },
+      "properties": {
+        "station_id": "WS_012",
+        "station_name": "Batiaghata Weather Station",
+        "current_temperature": 29.2,
+        "humidity": 84,
+        "pressure": 1013.9,
+        "rainfall": 21.6,
+        "wind_speed": 8.7,
+        "wind_direction": "SE",
+        "visibility": 9.4,
+        "uv_index": 5,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.8172, 21.8516]
+      },
+      "properties": {
+        "station_id": "WS_013",
+        "station_name": "Chalna Weather Station",
+        "current_temperature": 37.3,
+        "humidity": 65,
+        "pressure": 1010.8,
+        "rainfall": 5.2,
+        "wind_speed": 19.7,
+        "wind_direction": "W",
+        "visibility": 6.2,
+        "uv_index": 9,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.4872, 22.3716]
+      },
+      "properties": {
+        "station_id": "WS_014",
+        "station_name": "Assasuni Weather Station",
+        "current_temperature": 28.1,
+        "humidity": 87,
+        "pressure": 1014.5,
+        "rainfall": 35.8,
+        "wind_speed": 7.8,
+        "wind_direction": "E",
+        "visibility": 9.8,
+        "uv_index": 4,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.1672, 22.1516]
+      },
+      "properties": {
+        "station_id": "WS_015",
+        "station_name": "Shyamnagar Weather Station",
+        "current_temperature": 39.2,
+        "humidity": 62,
+        "pressure": 1009.9,
+        "rainfall": 2.1,
+        "wind_speed": 22.4,
+        "wind_direction": "NW",
+        "visibility": 5.8,
+        "uv_index": 10,
+        "last_updated": "2024-01-20T14:30:00Z"
+      }
+    }
+  ]
+}

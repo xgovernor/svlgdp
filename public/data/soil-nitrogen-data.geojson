@@ -7,6 +7,7 @@
         "name": "Dhaka",
         "district_code": "DH",
         "nitrogen": 45,
+        "potassium": 262,
         "color": "#ff8844"
       },
       "geometry": {
