@@ -74,20 +74,6 @@ const GisUI = () => {
                             </LayersControl.Overlay>
                         )
                     })}
-
-
-                    {/* <LayersControl.Overlay name="Rainfall difference (2010 - 2022)" checked={true}>
-                        {rainfallHeatData.map((point, index) => (
-                            <Marker
-                                key={index}
-                                position={[point[0], point[1]]}
-                                icon={new Icon({
-                                    iconUrl: point[2] < 0 ? '/red-icon.png' : '/green-icon.png',
-                                    iconSize: [25, 41],
-                                })}
-                            />
-                        ))}
-                    </LayersControl.Overlay> */}
                 </LayersControl>
 
                 <MapControls />

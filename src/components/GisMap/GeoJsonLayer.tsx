@@ -1,193 +1,255 @@
-import { memo } from "react";
+import { memo, useMemo } from "react";
 import { GeoJSON } from "react-leaflet";
-import { GeoJsonObject } from "geojson";
+import { GeoJsonObject, Feature, Geometry, FeatureCollection } from "geojson";
 import useSWR from "swr";
 import { fetcher } from "@/utils/fetcher";
-import L from "leaflet"; // Import Leaflet to create custom markers
+import L from "leaflet";
 
 interface GeoJsonLayerProps {
     url: string;
     name: string;
-    style?: Record<string, unknown>;
+    style?: L.PathOptions;
+    interactive?: boolean;
+    onFeatureClick?: (feature: Feature<Geometry>, layer: L.Layer) => void;
 }
 
-const GeoJsonLayer = ({ url, name, style }: GeoJsonLayerProps) => {
-// Fetch the GeoJSON data
-    const { data, error, isLoading } = useSWR<GeoJsonObject>(url, fetcher);
+const GeoJsonLayer = ({ url, name, style, interactive = true, onFeatureClick }: GeoJsonLayerProps) => {
+    // Fetch the GeoJSON data with error handling
+    const { data, error, isLoading } = useSWR<GeoJsonObject>(url, fetcher, {
+        errorRetryCount: 3,
+        errorRetryInterval: 1000,
+        revalidateOnFocus: false,
+    });
+
+    // Memoize style calculations for performance
+    const featureStyles = useMemo(() => {
+        if (!data) return {};
+
+        const styles: Record<string, L.PathOptions> = {};
+
+        // Type guard to check if data is a FeatureCollection
+        const isFeatureCollection = (obj: GeoJsonObject): obj is FeatureCollection => {
+            return obj.type === 'FeatureCollection' && 'features' in obj;
+        };
+
+        if (isFeatureCollection(data) && data.features) {
+            data.features.forEach((feature: Feature<Geometry>, index: number) => {
+                const color = feature.properties?.color || '#3388ff'; // Default Leaflet blue
+                const geometryType = feature.geometry?.type;
+
+                if (geometryType === 'Polygon' || geometryType === 'MultiPolygon') {
+                    styles[index] = {
+                        fillColor: color,
+                        weight: 2,
+                        opacity: 1,
+                        color: '#ffffff',
+                        dashArray: '3',
+                        fillOpacity: 0.7,
+                        ...style,
+                    };
+                } else {
+                    styles[index] = {
+                        color: color,
+                        weight: 3,
+                        opacity: 0.8,
+                        ...style,
+                    };
+                }
+            });
+        }
+
+        return styles;
+    }, [data, style]);
 
     if (error) {
-        console.error('Error loading metadata:', error);
+        console.error(`Error loading GeoJSON for ${name}:`, error);
+        return null;
     }
 
     if (isLoading) {
-        return <p>Loading...</p>;
+        return null; // Don't show loading text on map
     }
 
-    // Function to get color based on data type and properties
-    const getFeatureColor = (feature: any) => {
+    if (!data) {
+        return null;
+    }
+
+    // Function to create comprehensive popup content
+    const createPopupContent = (feature: Feature<Geometry>): string => {
         const props = feature.properties;
 
-        // Soil Type Polygons - color by fertility index
-        if (props?.soilType && props?.fertilityIndex) {
-            const fertility = props.fertilityIndex;
-            if (fertility >= 8) return "#2E7D32"; // Dark green for high fertility
-            if (fertility >= 6) return "#66BB6A"; // Medium green
-            if (fertility >= 4) return "#FFA726"; // Orange for medium fertility
-            return "#E57373"; // Red for low fertility
+        if (!props) {
+            return `<div><h3>${name}</h3><p>No additional data available</p></div>`;
         }
 
-        // Weather stations - color by temperature
-        if (props?.temperature) {
-            const temp = props.temperature;
-            if (temp >= 35) return "#B71C1C"; // Dark red for very hot
-            if (temp >= 30) return "#FF5722"; // Red orange for hot
-            if (temp >= 25) return "#FF9800"; // Orange for warm
-            return "#2196F3"; // Blue for cool
-        }
+        // Soil data popup
+        if (props.district_code) {
+            const fields = [
+                { label: 'pH', value: props.pH, unit: '' },
+                { label: 'Nitrogen', value: props.nitrogen, unit: '%' },
+                { label: 'Phosphorus', value: props.phosphorus, unit: '%' },
+                { label: 'Potassium', value: props.potassium, unit: '%' },
+                { label: 'Soil Type', value: props.soil_type, unit: '' },
+                { label: 'Area', value: props.area_km2, unit: ' km²' },
+            ];
 
-        // Water quality - color by pH
-        if (props?.pH && props?.dissolvedOxygen) {
-            const ph = props.pH;
-            if (ph >= 8) return "#9C27B0"; // Purple for alkaline
-            if (ph >= 7) return "#4CAF50"; // Green for neutral
-            return "#FF5722"; // Red for acidic
-        }
+            const fieldsHtml = fields
+                .filter(field => field.value !== undefined && field.value !== null)
+                .map(field => `<p><strong>${field.label}:</strong> ${field.value}${field.unit}</p>`)
+                .join('');
 
-        // Soil data districts - color by pH
-        if (props?.pH && props?.nitrogen) {
-            const ph = props.pH;
-            if (ph >= 7.5) return "#8BC34A"; // Light green for alkaline
-            if (ph >= 6.5) return "#4CAF50"; // Green for neutral
-            return "#FF9800"; // Orange for acidic
-        }
-
-        // Default colors for other data
-        if (props?.Difference !== undefined) {
-            return props.Difference < 0 ? "#FF0000" : "#008000";
-        }
-
-        return "#FF7800"; // Default orange
-    };
-
-    // Function to create popup content based on feature properties
-    const createPopupContent = (feature: any) => {
-        const props = feature.properties;
-
-        if (props?.soilType) {
             return `
-                <div>
-                    <h3>${props.soilType}</h3>
-                    <p><strong>Region:</strong> ${props.region}</p>
-                    <p><strong>Fertility Index:</strong> ${props.fertilityIndex}/10</p>
-                    <p><strong>pH Level:</strong> ${props.phLevel}</p>
-                    <p><strong>Organic Matter:</strong> ${props.organicMatter}%</p>
-                    <p><strong>Primary Crop:</strong> ${props.primaryCrop}</p>
-                    <p><strong>Drainage:</strong> ${props.drainageClass}</p>
-                    <p><strong>Area:</strong> ${props.area_hectares?.toLocaleString()} hectares</p>
+                <div style="min-width: 200px;">
+                    <h3 style="margin: 0 0 10px 0; color: #2563eb;">${props.name} District</h3>
+                    ${fieldsHtml}
                 </div>
             `;
         }
 
-        if (props?.station_name) {
+        // Weather station popup
+        if (props.station_name || props.temperature || props.humidity) {
             return `
-                <div>
-                    <h3>${props.station_name}</h3>
-                    <p><strong>Temperature:</strong> ${props.temperature}°C</p>
-                    <p><strong>Rainfall:</strong> ${props.rainfall}mm</p>
-                    <p><strong>Humidity:</strong> ${props.humidity}%</p>
-                    <p><strong>Wind Speed:</strong> ${props.wind_speed} km/h</p>
-                    <p><strong>Pressure:</strong> ${props.pressure} hPa</p>
+                <div style="min-width: 180px;">
+                    <h3 style="margin: 0 0 10px 0; color: #2563eb;">${props.station_name || 'Weather Station'}</h3>
+                    ${props.temperature ? `<p><strong>Temperature:</strong> ${props.temperature}°C</p>` : ''}
+                    ${props.humidity ? `<p><strong>Humidity:</strong> ${props.humidity}%</p>` : ''}
+                    ${props.wind_speed ? `<p><strong>Wind Speed:</strong> ${props.wind_speed} m/s</p>` : ''}
+                    ${props.elevation ? `<p><strong>Elevation:</strong> ${props.elevation} m</p>` : ''}
                 </div>
             `;
         }
 
-        if (props?.monitoring_id) {
+        // Water quality popup
+        if (props.water_quality || props.dissolved_oxygen) {
             return `
-                <div>
-                    <h3>${props.location_name}</h3>
-                    <p><strong>Water Body:</strong> ${props.water_body}</p>
-                    <p><strong>pH:</strong> ${props.pH}</p>
-                    <p><strong>Salinity:</strong> ${props.salinity} ppt</p>
-                    <p><strong>Turbidity:</strong> ${props.turbidity} NTU</p>
-                    <p><strong>Dissolved Oxygen:</strong> ${props.dissolvedOxygen} mg/L</p>
-                    <p><strong>Temperature:</strong> ${props.temperature}°C</p>
+                <div style="min-width: 180px;">
+                    <h3 style="margin: 0 0 10px 0; color: #2563eb;">Water Quality Station</h3>
+                    ${props.water_quality ? `<p><strong>Quality Index:</strong> ${props.water_quality}</p>` : ''}
+                    ${props.dissolved_oxygen ? `<p><strong>Dissolved Oxygen:</strong> ${props.dissolved_oxygen} mg/L</p>` : ''}
+                    ${props.turbidity ? `<p><strong>Turbidity:</strong> ${props.turbidity} NTU</p>` : ''}
+                    ${props.ph_level ? `<p><strong>pH Level:</strong> ${props.ph_level}</p>` : ''}
                 </div>
             `;
         }
 
-        if (props?.district_code) {
-            return `
-                <div>
-                    <h3>${props.name} District</h3>
-                    <p><strong>pH:</strong> ${props.pH}</p>
-                    <p><strong>Nitrogen:</strong> ${props.nitrogen}%</p>
-                    <p><strong>Phosphorus:</strong> ${props.phosphorus}%</p>
-                    <p><strong>Potassium:</strong> ${props.potassium}%</p>
-                    <p><strong>Soil Type:</strong> ${props.soil_type}</p>
-                    <p><strong>Area:</strong> ${props.area_km2} km²</p>
-                </div>
-            `;
-        }
+        // Generic popup for other features
+        const displayName = props.name || props.title || props.label || `${name} Feature`;
+        const additionalFields = Object.entries(props)
+            .filter(([key, value]) =>
+                !['name', 'title', 'label', 'color'].includes(key) &&
+                value !== undefined &&
+                value !== null
+            )
+            .map(([key, value]) => `<p><strong>${key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}:</strong> ${value}</p>`)
+            .join('');
 
-        // Default popup for other features
-        if (props?.name) {
-            return `${name} Source: ${props.name}`;
-        }
-
-        return `${name} Feature`;
+        return `
+            <div style="min-width: 150px;">
+                <h3 style="margin: 0 0 10px 0; color: #2563eb;">${displayName}</h3>
+                ${additionalFields}
+            </div>
+        `;
     };
 
     return (
-        data && (
-            <GeoJSON
-                data={data}
-                style={(feature) => {
-                    const color = getFeatureColor(feature);
+        <GeoJSON
+            key={url} // Force re-render when URL changes
+            data={data}
+            interactive={interactive}
+            style={(feature) => {
+                if (!feature) return {};
 
-                    // Different styles for polygons vs points
-                    if (feature?.geometry?.type === 'Polygon' || feature?.geometry?.type === 'MultiPolygon') {
-                        return {
-                            fillColor: color,
-                            weight: 2,
-                            opacity: 1,
-                            color: '#ffffff',
-                            dashArray: '3',
-                            fillOpacity: 0.7
-                        };
-                    }
+                const color = feature.properties?.color;
+                const geometryType = feature.geometry?.type;
 
-                    // Style for lines and other geometries
-                    return style || {
-                        height: 4,
-                        width: 4,
-                        color: color,
-                        weight: 2,
-                        opacity: 0.65,
-                    };
-                }}
-                // Customize point markers based on feature properties
-                pointToLayer={(feature, latlng) => {
-                    const color = getFeatureColor(feature);
-
-                    const markerStyle = {
-                        radius: 8,
+                // Different styles for polygons vs points/lines
+                if (geometryType === 'Polygon' || geometryType === 'MultiPolygon') {
+                    return {
                         fillColor: color,
-                        color: "#000",
-                        weight: 1,
+                        weight: 2,
                         opacity: 1,
-                        fillOpacity: 0.8,
+                        color: '#ffffff',
+                        dashArray: '3',
+                        fillOpacity: 0.7,
+                        ...style,
                     };
+                }
 
-                    // Create a circle marker with custom style
-                    return L.circleMarker(latlng, markerStyle);
-                }}
-                onEachFeature={(feature, layer) => {
-                    // Attach popups to each feature
-                    const popupContent = createPopupContent(feature);
-                    layer.bindPopup(popupContent);
-                }}
-            />
-        )
+                // Style for lines and other geometries
+                return {
+                    color: color,
+                    weight: 3,
+                    opacity: 0.8,
+                    ...style,
+                };
+            }}
+            // Customize point markers based on feature properties
+            pointToLayer={(feature, latlng) => {
+                const color = feature.properties?.color;
+                const props = feature.properties;
+
+                // Different marker sizes based on data importance
+                let radius = 8;
+                if (props?.importance === 'high') radius = 12;
+                if (props?.importance === 'low') radius = 6;
+
+                const markerStyle: L.CircleMarkerOptions = {
+                    radius,
+                    fillColor: color,
+                    color: "#000",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8,
+                };
+
+                return L.circleMarker(latlng, markerStyle);
+            }}
+            onEachFeature={(feature, layer) => {
+                // Attach popups to each feature
+                const popupContent = createPopupContent(feature);
+                layer.bindPopup(popupContent, {
+                    maxWidth: 300,
+                    closeButton: true,
+                    autoPan: true,
+                });
+
+                // Add hover effects for better UX
+                layer.on({
+                    mouseover: (e) => {
+                        const layer = e.target;
+                        if (layer.setStyle && feature.geometry?.type !== 'Point') {
+                            layer.setStyle({
+                                weight: 3,
+                                fillOpacity: 0.9,
+                            });
+                        }
+                    },
+                    mouseout: (e) => {
+                        const layer = e.target;
+                        if (layer.setStyle && feature.geometry?.type !== 'Point') {
+                            layer.setStyle({
+                                weight: 2,
+                                fillOpacity: 0.7,
+                            });
+                        }
+                    },
+                    click: (e) => {
+                        // Custom click handler if provided
+                        if (onFeatureClick) {
+                            onFeatureClick(feature, layer);
+                        }
+
+                        // Auto-zoom to feature bounds on click for polygons
+                        if (feature.geometry?.type === 'Polygon' || feature.geometry?.type === 'MultiPolygon') {
+                            const bounds = (layer as any).getBounds();
+                            if (bounds && bounds.isValid()) {
+                                e.target._map.fitBounds(bounds, { padding: [20, 20] });
+                            }
+                        }
+                    },
+                });
+            }}
+        />
     );
 };
 

@@ -59,33 +59,45 @@ const layers: ILayer[] = [
 ];
 
 const overlays: IOverlay[] = [
+  // {
+  //   name: "Rainfall difference (2010 - 2022)",
+  //   url: "/data/rainfall-difference.geojson",
+  // },
+  // {
+  //   name: "Study area",
+  //   url: "/data/study-area.geojson",
+  // },
+  // {
+  //   name: "Carbon emissions",
+  //   url: "/data/co2-metadata.geojson",
+  // },
+  // {
+  //   name: "Methane emissions",
+  //   url: "/data/methane-metadata.geojson",
+  // },
+  // {
+  //   name: "Wilidfire",
+  //   url: "/data/wildfire.geojson",
+  // },
   {
-    name: "Rainfall difference (2010 - 2022)",
-    url: "/data/rainfall-difference.geojson",
+    name: "Soil Nitrogen",
+    url: "/data/soil-nitrogen-data.geojson",
   },
   {
-    name: "Study area",
-    url: "/data/study-area.geojson",
+    name: "Soil Potassium",
+    url: "/data/soil-potassium-data.geojson",
   },
   {
-    name: "Carbon emissions",
-    url: "/data/co2-metadata.geojson",
+    name: "Soil pH",
+    url: "/data/soil-ph-data.geojson",
   },
   {
-    name: "Methane emissions",
-    url: "/data/methane-metadata.geojson",
+    name: "Soil Phosphorus",
+    url: "/data/soil-phosphorus-data.geojson",
   },
   {
     name: "Tropical Storm Leslie",
     url: "/data/tropical-storm-leslie.geojson",
-  },
-  {
-    name: "Wilidfire",
-    url: "/data/wildfire.geojson",
-  },
-  {
-    name: "Soil Data",
-    url: "/data/soil-data.geojson",
   },
   {
     name: "Weather Stations",
